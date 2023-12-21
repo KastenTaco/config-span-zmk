@@ -1,0 +1,13 @@
+file_format: "1"
+id: temper
+name: Temper
+type: shield
+url: https://github.com/raeedcho/temper
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - temper_left
+  - temper_right
