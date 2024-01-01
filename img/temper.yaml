@@ -1,149 +1,77 @@
 layers:
   Base:
-  - ''''
-  - ','
-  - .
-  - P
-  - Y
-  - F
-  - G
-  - C
-  - R
-  - L
-  - {t: A, h: LGUI}
-  - {t: O, h: LALT}
-  - {t: E, h: LCTRL}
-  - {t: U, h: LSHFT}
-  - I
-  - D
-  - {t: H, h: RSHFT}
-  - {t: T, h: RCTRL}
-  - {t: N, h: RALT}
-  - {t: S, h: RGUI}
-  - {t: ':', s: ;}
-  - Q
-  - J
-  - K
-  - X
-  - B
-  - M
-  - W
-  - V
-  - Z
-  - ESC
-  - {t: BSPC, s: DEL}
-  - {t: TAB, h: Numpad}
-  - {t: ENTER, h: Function}
-  - {t: SPACE, s: '&dot_space'}
-  - {t: LSHFT, h: Navigate, s: '&caps_word'}
+  - ['''', ',', ., P, Y, F, G, C, R, L]
+  - - {t: A, h: LGUI}
+    - {t: O, h: LALT}
+    - {t: E, h: LCTRL}
+    - {t: U, h: LSHFT}
+    - I
+    - D
+    - {t: H, h: RSHFT}
+    - {t: T, h: RCTRL}
+    - {t: N, h: RALT}
+    - {t: S, h: RGUI}
+  - - {t: ':', s: ;}
+    - Q
+    - J
+    - K
+    - X
+    - B
+    - M
+    - W
+    - V
+    - Z
+  - - ESC
+    - {t: BSPC, s: DEL}
+    - {t: TAB, h: Numpad}
+    - {t: ENTER, h: Function}
+    - {t: SPACE, s: '&dot_space'}
+    - {t: LSHFT, h: Navigate, s: '&caps_word'}
   Numpad:
-  - '&boot'
-  - ''
-  - ''
-  - ''
-  - ''
-  - '['
-  - '7'
-  - '8'
-  - '9'
-  - ']'
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHFT, h: sticky}
-  - ''
-  - +
-  - '4'
-  - '5'
-  - '6'
-  - /
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '-'
-  - '1'
-  - '2'
-  - '3'
-  - \
-  - ''
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - '0'
-  - KP DOT
+  - ['&boot', '', '', '', '', '[', '7', '8', '9', ']']
+  - - {t: LGUI, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LSHFT, h: sticky}
+    - ''
+    - +
+    - '4'
+    - '5'
+    - '6'
+    - /
+  - ['', '', '', '', '', '-', '1', '2', '3', \]
+  - - ''
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - '0'
+    - KP DOT
   Function:
-  - PG UP
-  - HOME
-  - UP
-  - END
-  - ''
-  - ''
-  - F7
-  - F8
-  - F9
-  - F12
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - ''
-  - ''
-  - {t: F4, h: RSHFT}
-  - {t: F5, h: RCTRL}
-  - {t: F6, h: RALT}
-  - {t: F11, h: RGUI}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F1
-  - F2
-  - F3
-  - F10
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ''
-  - ''
+  - [PG UP, HOME, UP, END, '', '', F7, F8, F9, F12]
+  - - PG DN
+    - LEFT
+    - DOWN
+    - RIGHT
+    - ''
+    - ''
+    - {t: F4, h: RSHFT}
+    - {t: F5, h: RCTRL}
+    - {t: F6, h: RALT}
+    - {t: F11, h: RGUI}
+  - ['', '', '', '', '', '', F1, F2, F3, F10]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - ''
+    - ''
   Navigate:
-  - PG UP
-  - HOME
-  - UP
-  - END
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {type: held}
+  - [PG UP, HOME, UP, END, '', '', '', '', '', '']
+  - [PG DN, LEFT, DOWN, RIGHT, '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
+    - {type: held}
