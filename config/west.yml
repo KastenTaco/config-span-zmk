@@ -2,15 +2,17 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
+    - name: zmk-nodefree-config
+      remote: urob
+      path: config/
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-nodefree-config
-      url: https://github.com/urob/zmk-nodefree-config.git
-      path: config/zmk-nodefree-config
   self:
     path: config
