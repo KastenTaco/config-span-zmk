@@ -4,9 +4,12 @@ Temper Settings
 Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
 mechanical keyboard with [nice!view](https://nicekeyboards.com/docs/nice-view/) displays.
 
+ * Dvorak base layout
  * [timer-less home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
  * sticky shift on right thumb, double-tap (or shift+tap) activates caps-word
  * shift+space morphs into dot+space+sticky-shift
+
+![keymap image](img/temper.svg)
 
 
 ## Building
@@ -36,6 +39,16 @@ bootloader mode by pressing the reset button twice, and copy this file to the
 board, which will show up as a USB drive when connected to your computer. Repeat
 for the right side board.
 
+## Keymap image
+
+The keymap image is created using [keymap-drawer](https://github.com/caksoylar/keymap-drawer).
+It can be regenerated with the commands:
+
+```sh
+keymap parse -c 10 -z config/temper.keymap > img/temper.yaml
+keymap draw -k chocofi img/temper.yaml > img/temper.svg
+```
+
 
 ## Miscellaneous
 
@@ -43,7 +56,7 @@ In MacOS, when a key is held down while entering text, a popup is shown which
 lets you choose between various accented forms of the character. The following
 command will disable this behaviour.
 
-```
+```sh
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
