@@ -21,14 +21,14 @@ layers:
     - W
     - V
     - Z
-  - - ESC
+  - - {t: ESC, h: Symbol}
     - {t: BSPC, s: DEL}
     - {t: TAB, h: Numpad}
     - {t: ENTER, h: Function}
     - {t: SPACE, s: '&dot_space'}
-    - {t: LSHFT, h: Navigate, s: '&caps_word'}
+    - {t: LSHFT, h: Symbol, s: '&caps_word'}
   Numpad:
-  - ['&boot', '', '', '', '', '[', '7', '8', '9', ']']
+  - ['`', <, '>', '', '', '[', '7', '8', '9', ']']
   - - {t: LGUI, h: sticky}
     - {t: LALT, h: sticky}
     - {t: LCTRL, h: sticky}
@@ -40,18 +40,28 @@ layers:
     - '6'
     - /
   - ['', '', '', '', '', '-', '1', '2', '3', \]
-  - - ''
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
     - '0'
     - KP DOT
+  Symbol:
+  - [PG UP, HOME, UP, END, '', '', '', '', '', '']
+  - [PG DN, LEFT, DOWN, RIGHT, '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
+    - ''
   Function:
-  - [PG UP, HOME, UP, END, '', '', F7, F8, F9, F12]
-  - - PG DN
-    - LEFT
-    - DOWN
-    - RIGHT
+  - ['', '', '', '', '', '', F7, F8, F9, F12]
+  - - {t: LGUI, h: sticky}
+    - {t: LALT, h: sticky}
+    - {t: LCTRL, h: sticky}
+    - {t: LSHFT, h: sticky}
     - ''
     - ''
     - {t: F4, h: RSHFT}
@@ -65,13 +75,38 @@ layers:
     - {type: held}
     - ''
     - ''
-  Navigate:
-  - [PG UP, HOME, UP, END, '', '', '', '', '', '']
-  - [PG DN, LEFT, DOWN, RIGHT, '', '', '', '', '', '']
+  System:
+  - ['&boot', '', '', '', '', '', '', '', '', '']
   - ['', '', '', '', '', '', '', '', '', '']
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - ''
     - ''
     - {type: held}
+    - {type: held}
+    - ''
+    - ''
+combos:
+- p: [6, 7]
+  k: '{'
+  l: [Base, Numpad]
+- p: [7, 8]
+  k: '}'
+  l: [Base, Numpad]
+- p: [16, 17]
+  k: (
+  l: [Base, Numpad]
+- p: [17, 18]
+  k: )
+  l: [Base, Numpad]
+- p: [26, 27]
+  k: '['
+  l: [Base, Numpad]
+- p: [27, 28]
+  k: ']'
+  l: [Base, Numpad]
+- p: [15, 16]
+  k: '='
+  l: [Base, Numpad]
+- p: [25, 26]
+  k: _
+  l: [Base, Numpad]
