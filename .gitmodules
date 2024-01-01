@@ -1,3 +1,3 @@
-[submodule "config/zmk-nodefree-config"]
-	path = config/zmk-nodefree-config
+[submodule "zmk-nodefree-config"]
+	path = zmk-nodefree-config
 	url = git@github.com:urob/zmk-nodefree-config.git
