@@ -131,6 +131,16 @@ ZMK_BEHAVIOR(dot_space, macro,
 // tap: colon | shift + tap: semicolon
 SIMPLE_MORPH(colon_semi, SFT, &kp COLON, &kp SEMI)
 
+// tap: TAB | control + tap: TILDE | hold: numpad layer
+#define smart_tab smart_tab_inner NUM 0
+ZMK_BEHAVIOR(smart_tab_inner, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&tab_tilde>;
+)
+SIMPLE_MORPH(tab_tilde, CTL, &kp TAB, &kp TILDE)
+
 // double-tap to enter bootloader
 ZMK_BEHAVIOR(boot, tap_dance,
     bindings = <&none>, <&bootloader>;
@@ -146,7 +156,7 @@ ZMK_LAYER(Dvorak,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &colon_semi      &kp Q         &kp J         &kp K         &kp X             &kp B         &kp M         &kp W         &kp V         &kp Z
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp ESC       &bs_del     &lt NUM TAB      &lt FUN ENTER &smart_space   &shift_word
+                                   &kp ESC       &bs_del      &smart_tab      &lt FUN ENTER &smart_space   &shift_word
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
@@ -176,13 +186,13 @@ ZMK_LAYER(Function,
 
 ZMK_LAYER(System,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &boot          XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           XXX
+        &boot          XXX      &kp C_BRI_DEC &kp C_BRI_INC      XXX               XXX           XXX           XXX           XXX           XXX
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         XXX           XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           XXX
+         XXX       &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP       XXX               XXX           XXX           XXX           XXX           XXX
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         XXX           XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           XXX
+         XXX       &bt BT_CLR    &bt BT_PRV    &bt BT_NXT        XXX               XXX           XXX           XXX           XXX           XXX
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                     XXX           XXX           XXX               XXX           XXX           XXX
+                                 &kp C_PREV    &kp C_NEXT     &kp C_PP             XXX           XXX           XXX
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
