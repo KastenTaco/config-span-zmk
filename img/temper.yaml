@@ -23,7 +23,7 @@ layers:
     - Z
   - - ESC
     - {t: BSPC, s: DEL}
-    - {t: TAB, h: Numpad}
+    - {t: TAB, h: Numpad, s: '~'}
     - {t: ENTER, h: Function}
     - {t: SPACE, s: '&dot_space'}
     - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -57,12 +57,12 @@ layers:
     - ''
     - ''
   System:
-  - [BOOT, '', '', '', '', '', '', '', '', '']
-  - ['', '', '', '', '', '', '', '', '', '']
-  - ['', '', '', '', '', '', '', '', '', '']
-  - - ''
-    - ''
-    - {type: held}
+  - [BOOT, '', BRI DEC, BRI INC, '', '', '', '', '', '']
+  - ['', MUTE, VOL DN, VOL UP, '', '', '', '', '', '']
+  - ['', BT CLR, BT PRV, BT NXT, '', '', '', '', '', '']
+  - - PREV
+    - NEXT
+    - {t: PP, type: held}
     - {type: held}
     - ''
     - ''
