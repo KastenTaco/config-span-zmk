@@ -40,10 +40,10 @@ layers:
     - '6'
     - /
   - ['', '', '', '', '', '-', '1', '2', '3', \]
-  - - ''
-    - ''
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - ''
+    - {t: ▽, type: trans}
     - '0'
     - KP DOT
   Function:
@@ -52,7 +52,7 @@ layers:
   - ['', '', '', '', '', '', F1, F2, F3, F10]
   - - ''
     - ''
-    - ''
+    - {t: ▽, type: trans}
     - {type: held}
     - ''
     - ''
