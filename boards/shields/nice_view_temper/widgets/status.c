@@ -124,7 +124,6 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
     rotate_canvas(canvas, cbuf);
 }
 
-#if 0
 static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status_state *state) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 1);
 
@@ -169,10 +168,20 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
     // Rotate canvas
     rotate_canvas(canvas, cbuf);
 }
-#endif
 
 static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status_state *state) {
-    lv_obj_t *canvas = lv_obj_get_child(widget, 2);
+    // If this is the system layer, then hide the artwork so that we can see
+    // which bluetooth profile is being selected
+    lv_obj_t *art = lv_obj_get_child(widget, 2);
+
+    if (state->layer_index == 3) {
+        lv_obj_add_flag(art, LV_OBJ_FLAG_HIDDEN);
+    } else {
+        lv_obj_clear_flag(art, LV_OBJ_FLAG_HIDDEN);
+    }
+
+    // Draw the layer label
+    lv_obj_t *canvas = lv_obj_get_child(widget, 3);
 
     lv_draw_rect_dsc_t rect_black_dsc;
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
@@ -238,7 +247,7 @@ static void set_output_status(struct zmk_widget_status *widget,
     widget->state.active_profile_bonded = state->active_profile_bonded;
 
     draw_top(widget->obj, widget->cbuf, &widget->state);
-    /* draw_middle(widget->obj, widget->cbuf2, &widget->state); */
+    draw_middle(widget->obj, widget->cbuf2, &widget->state);
 }
 
 static void output_status_update_cb(struct output_status_state state) {
@@ -316,9 +325,10 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_t *top = lv_canvas_create(widget->obj);
     lv_obj_align(top, LV_ALIGN_TOP_RIGHT, 0, 0);
     lv_canvas_set_buffer(top, widget->cbuf, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR);
-    /* lv_obj_t *middle = lv_canvas_create(widget->obj); */
-    /* lv_obj_align(middle, LV_ALIGN_TOP_LEFT, 24, 0); */
-    /* lv_canvas_set_buffer(middle, widget->cbuf2, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR); */
+
+    lv_obj_t *middle = lv_canvas_create(widget->obj);
+    lv_obj_align(middle, LV_ALIGN_TOP_LEFT, 24, 0);
+    lv_canvas_set_buffer(middle, widget->cbuf2, CANVAS_SIZE, CANVAS_SIZE, LV_IMG_CF_TRUE_COLOR);
 
     lv_obj_t *art = lv_img_create(widget->obj);
     lv_img_set_src(art, &wolf);

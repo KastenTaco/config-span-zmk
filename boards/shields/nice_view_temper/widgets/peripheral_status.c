@@ -117,7 +117,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     lv_obj_t *art = lv_img_create(widget->obj);
     /* bool random = sys_rand32_get() & 1; */
     /* lv_img_set_src(art, random ? &balloon : &mountain); */
-    lv_img_set_src(art, &fox);
+    lv_img_set_src(art, &mountain);
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
     /* lv_obj_align(art, LV_ALIGN_CENTER, 0, 0); */
 
