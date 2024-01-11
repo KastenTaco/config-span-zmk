@@ -131,7 +131,7 @@ ZMK_BEHAVIOR(dot_space, macro,
 // tap: colon | shift + tap: semicolon
 SIMPLE_MORPH(colon_semi, SFT, &kp COLON, &kp SEMI)
 
-// tap: TAB | control + tap: TILDE | control + shift + tab: GRAVE | hold: numpad layer
+// tap: TAB | control + tap: TILDE | control + shift + tap: GRAVE | hold: numpad layer
 #define smart_tab smart_tab_inner NUM 0
 ZMK_BEHAVIOR(smart_tab_inner, hold_tap,
     flavor = "balanced";
