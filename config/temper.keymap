@@ -59,8 +59,8 @@ ZMK_COMBO(underscore, &kp UNDER, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(equal,      &kp EQUAL, RB2 RB3, DEF NUM, COMBO_TERM_FAST)
 
 // macOS shift space left and right
-ZMK_COMBO(workspace_left,  &kp LC(LEFT),  LM3 LM2, FUN, COMBO_TERM_FAST)
-ZMK_COMBO(workspace_right, &kp LC(RIGHT), LM2 LM1, FUN, COMBO_TERM_FAST)
+ZMK_COMBO(workspace_left,  &kp LC(LEFT),  LM3 LM2, NUM FUN, COMBO_TERM_FAST)
+ZMK_COMBO(workspace_right, &kp LC(RIGHT), LM2 LM1, NUM FUN, COMBO_TERM_FAST)
 
 // left and right arrow '->'
 ZMK_BEHAVIOR(larr, macro,
