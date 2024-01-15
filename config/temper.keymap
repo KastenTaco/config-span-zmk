@@ -1,3 +1,6 @@
+/*
+ * https://github.com/zmkfirmware/zmk/blob/main/app/include/dt-bindings/zmk/keys.h
+ */
 
 #include "zmk-nodefree-config/helper.h"
 #include "zmk-nodefree-config/keypos_def/keypos_36keys.h"
@@ -48,8 +51,8 @@ ZMK_COMBO(lbrc, &kp LBRC, RT1 RT2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc, &kp RBRC, RT2 RT3, DEF NUM, COMBO_TERM_FAST)
 
 // left and right bracket [ ]
-ZMK_COMBO(lbkt, &kp LBKT, RT0 RT1, DEF    , COMBO_TERM_FAST)
-ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF    , COMBO_TERM_FAST)
+ZMK_COMBO(lbkt, &kp LBKT, RT0 RT1, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF, COMBO_TERM_FAST)
 
 // left and right parenthesis ( )
 ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
