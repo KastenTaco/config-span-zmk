@@ -23,7 +23,7 @@
 // ---------- SETTINGS ----------
 
 &sk {  // sticky-key config
-    release-after-ms = <600>;  // release after 0.6s
+    release-after-ms = <1000>; // release after 1s
     quick-release;             // no double capitalization when rolling keys
 };
 
@@ -55,8 +55,12 @@ ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF    , COMBO_TERM_FAST)
 ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(underscore, &kp UNDER, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(equal,      &kp EQUAL, RB2 RB3, DEF NUM, COMBO_TERM_FAST)
+// left and right less-then and greater-then < >
+ZMK_COMBO(lt, &kp LT, LM3 LM2, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(gt, &kp GT, LM2 LM1, DEF, COMBO_TERM_FAST)
+
+ZMK_COMBO(under, &kp UNDER, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(equal, &kp EQUAL, RB2 RB3, DEF NUM, COMBO_TERM_FAST)
 
 // macOS shift space left and right
 ZMK_COMBO(workspace_left,  &kp LC(LEFT),  LM3 LM2, NUM FUN, COMBO_TERM_FAST)
@@ -120,6 +124,12 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
         bindings = <BINDING1>, <BINDING2>; \
     )
 
+// tap: colon | shift + tap: semicolon
+SIMPLE_MORPH(colon_semi, SFT, &kp COLON, &kp SEMI)
+
+// tap: plus | shift + tap: equal
+SIMPLE_MORPH(plus_equal, SFT, &kp PLUS, &kp EQUAL)
+
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: space
 SIMPLE_MORPH(smart_space, SFT, &kp SPACE, &dot_space)
 ZMK_BEHAVIOR(dot_space, macro,
@@ -127,9 +137,6 @@ ZMK_BEHAVIOR(dot_space, macro,
     tap-ms = <5>;
     bindings = <&kp DOT &kp SPACE &sk LSHFT>;
 )
-
-// tap: colon | shift + tap: semicolon
-SIMPLE_MORPH(colon_semi, SFT, &kp COLON, &kp SEMI)
 
 // tap: TAB | control + tap: TILDE | control + shift + tap: GRAVE | hold: numpad layer
 #define smart_tab smart_tab_inner NUM 0
@@ -169,7 +176,7 @@ ZMK_LAYER(Numpad,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp GRAVE      &kp LT        &kp GT          XXX           XXX            &kp LBKT       &kp N7        &kp N8        &kp N9       &kp RBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT        XXX            &kp PLUS       &kp N4        &kp N5        &kp N6       &kp SLASH
+      &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT        XXX           &plus_equal     &kp N4        &kp N5        &kp N6       &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          XXX           XXX           XXX           XXX           XXX            &kp MINUS      &kp N1        &kp N2        &kp N3     &kp BACKSLASH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
