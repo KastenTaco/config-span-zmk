@@ -34,7 +34,7 @@ layers:
     - {t: LCTRL, h: sticky}
     - {t: LSHFT, h: sticky}
     - ''
-    - +
+    - {t: +, s: '='}
     - '4'
     - '5'
     - '6'
@@ -85,6 +85,12 @@ combos:
 - p: [17, 18]
   k: )
   l: [Dvorak, Numpad]
+- p: [11, 12]
+  k: <
+  l: [Dvorak]
+- p: [12, 13]
+  k: '>'
+  l: [Dvorak]
 - p: [26, 27]
   k: _
   l: [Dvorak, Numpad]
