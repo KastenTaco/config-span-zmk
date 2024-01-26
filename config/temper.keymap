@@ -80,8 +80,8 @@ ZMK_BEHAVIOR(rarr, macro,
     tap-ms = <5>;
     bindings = <&kp MINUS &kp GT>;
 )
-ZMK_COMBO(left_arrow,  &larr, LM3 LM2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(right_arrow, &rarr, LM2 LM1, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(left_arrow,  &larr, LM3 LM2, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(right_arrow, &rarr, LM2 LM1, DEF, COMBO_TERM_FAST)
 
 
 // ----------- KEYMAP -----------
