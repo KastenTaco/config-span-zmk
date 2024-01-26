@@ -85,10 +85,10 @@ combos:
 - p: [17, 18]
   k: )
   l: [Dvorak, Numpad]
-- p: [11, 12]
+- p: [1, 2]
   k: <
   l: [Dvorak]
-- p: [12, 13]
+- p: [2, 3]
   k: '>'
   l: [Dvorak]
 - p: [26, 27]
@@ -103,9 +103,9 @@ combos:
 - p: [12, 13]
   k: LC(RIGHT)
   l: [Numpad, Function]
-- p: [1, 2]
+- p: [11, 12]
   k: ←
-  l: [Dvorak, Numpad]
-- p: [2, 3]
+  l: [Dvorak]
+- p: [12, 13]
   k: →
-  l: [Dvorak, Numpad]
+  l: [Dvorak]
