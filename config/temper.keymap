@@ -59,8 +59,8 @@ ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
 
 // left and right less-then and greater-then < >
-ZMK_COMBO(lt, &kp LT, LM3 LM2, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(gt, &kp GT, LM2 LM1, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lt, &kp LT, LT3 LT2, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(gt, &kp GT, LT2 LT1, DEF, COMBO_TERM_FAST)
 
 ZMK_COMBO(under, &kp UNDER, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(equal, &kp EQUAL, RB2 RB3, DEF NUM, COMBO_TERM_FAST)
@@ -80,8 +80,8 @@ ZMK_BEHAVIOR(rarr, macro,
     tap-ms = <5>;
     bindings = <&kp MINUS &kp GT>;
 )
-ZMK_COMBO(left_arrow,  &larr, LT3 LT2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(right_arrow, &rarr, LT2 LT1, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(left_arrow,  &larr, LM3 LM2, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(right_arrow, &rarr, LM2 LM1, DEF NUM, COMBO_TERM_FAST)
 
 
 // ----------- KEYMAP -----------
