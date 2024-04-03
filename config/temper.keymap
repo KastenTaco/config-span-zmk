@@ -117,7 +117,7 @@ ZMK_BEHAVIOR(shift_word, mod_morph,
 ZMK_BEHAVIOR(bs_del, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    keep-mods = <MOD_RSFT>;
+    /* keep-mods = <MOD_RSFT>; */
 )
 
 // reuse basic mod-morph scheme

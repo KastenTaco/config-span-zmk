@@ -21,7 +21,7 @@ Given a directory structure like:
 ```
 ...
 |-- config-temper/
-|-- zephyr-sdk-0.16.4/
+|-- zephyr-sdk-0.16.5-1/
 `-- zmk/
     |-- app
     `-- ...
@@ -31,7 +31,7 @@ Then from the `zmk/app` directory run the following command to build the
 firmware for the left hand board:
 
 ```sh
-west build -b nice_nano_v2 -p -c -- -DSHIELD="temper_left nice_view_adapter nice_view_temper" -DZMK_CONFIG=../../config-temper-zmk/config -DZMK_EXTRA_MODULES=../../config-temper-zmk -DZephyr-sdk_DIR=../../zephyr-sdk-0.16.4/cmake
+west build -b nice_nano_v2 -p -c -- -DSHIELD="temper_left nice_view_adapter nice_view_temper" -DZMK_CONFIG=../../config-temper-zmk/config -DZMK_EXTRA_MODULES=../../config-temper-zmk -DZephyr-sdk_DIR=../../zephyr-sdk-0.16.5-1/cmake
 ```
 
 This will produce the file `zmk/app/build/zephyr/zmk.utf`. Put the board into
