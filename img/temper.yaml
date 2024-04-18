@@ -123,10 +123,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ''
-    - '&msc MOVE_LEFT'
-  - - '&mmv 6 MOVE_UP'
-    - '&msc MOVE_RIGHT'
-    - '&msc MOVE_UP'
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -135,10 +135,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - '&mmv 6 MOVE_LEFT'
-    - {t: '&mmv 6 MOVE_DOWN', type: held}
-    - '&mmv 6 MOVE_RIGHT'
-    - '&msc MOVE_DOWN'
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
