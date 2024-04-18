@@ -74,10 +74,10 @@
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans   &kp K_REDO  &kp K_PASTE        &kp K_COPY           &kp K_CUT          &kp K_UNDO       &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &none       &msc MOVE_LEFT     &mmv 6 MOVE_UP       &msc MOVE_RIGHT    &msc MOVE_UP     &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans      &mmv 6 MOVE_LEFT   &mmv 6 MOVE_DOWN     &mmv 6 MOVE_RIGHT  &msc MOVE_DOWN   &trans
-                        &trans  &trans  &trans   &mkp LCLK   &mkp MCLK          &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans   &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &none       &trans       &trans       &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &trans      &trans       &trans       &trans     &trans      &trans
+                        &trans  &trans  &trans   &mkp LCLK   &mkp MCLK    &mkp MB2
                         >;
                 };
                 sym_layer {
