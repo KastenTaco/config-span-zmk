@@ -1,0 +1,108 @@
+layers:
+  Base:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - [A, S, D, F, G, H, J, K, L, ;]
+  - [Z, X, C, V, B, N, M, ',', ., /]
+  - [LGUI, Nav, LSHFT, SPACE, Sym, RALT]
+  Nav:
+  - - BT CLR
+    - {t: ▽, type: trans}
+    - ESC
+    - '~'
+    - {t: ▽, type: trans}
+    - TAB
+    - HOME
+    - UP
+    - END
+    - DEL
+  - - {t: BT, h: '0'}
+    - CMENU
+    - RALT
+    - LCTRL
+    - Num
+    - /
+    - LEFT
+    - DOWN
+    - RIGHT
+    - BSPC
+  - - {t: BT, h: '1'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - \
+    - RET
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Sym:
+  - ['!', '@', '#', $, '%', ^, '&', KP MULTIPLY, (, )]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '-'
+    - '='
+    - '['
+    - ']'
+    - '|'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - \
+  - - LGUI
+    - {t: ▽, type: trans}
+    - SPACE
+    - RET
+    - {type: held}
+    - RALT
+  Num:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - A
+    - '7'
+    - '8'
+    - '9'
+    - D
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - B
+    - '4'
+    - '5'
+    - '6'
+    - E
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - C
+    - '1'
+    - '2'
+    - '3'
+    - F
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - '0'
+    - .
+    - {t: ▽, type: trans}
