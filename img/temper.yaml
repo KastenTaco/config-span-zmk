@@ -24,45 +24,39 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - R
     - M
     - H
     - S
-  - - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - V
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - E
     - PREVIOUS
-  - - VOL DN
+    - VOL DN
     - VOLUME UP
     - NEXT
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: O, type: held}
+    - O
     - '0'
     - '1'
     - '2'
     - '3'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - PLAY PAUSE
-  - [STOP, MUTE]
+    - STOP
+    - MUTE
   Nav:
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -71,37 +65,32 @@ layers:
     - PASTE
     - COPY
     - CUT
-  - - UNDO
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - UNDO
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - CAPSLOCK
     - HOME
-  - - UP ARROW
+    - UP ARROW
     - END
     - PAGE UP
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - INSERT
-    - {t: LEFT ARROW, type: held}
+    - INSERT
+    - LEFT ARROW
     - DOWN
     - RIGHT
     - PAGE DOWN
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Mou:
   - - {t: ▽, type: trans}
@@ -109,20 +98,20 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - REDO
     - PASTE
     - COPY
     - CUT
-  - - UNDO
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - UNDO
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -137,17 +126,11 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - '&mkp LCLK'
-  - ['&mkp MCLK', '&mkp MB2']
+    - '&mkp MCLK'
+    - '&mkp MB2'
   Sym:
-  - - {t: ▽, type: trans}
-    - '{'
+  - - '{'
     - '&'
     - '*'
     - (
@@ -156,41 +139,35 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ':'
+  - - ':'
     - $
     - '%'
     - ^
     - +
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '~'
+  - - '~'
     - '!'
     - '@'
     - '#'
     - '|'
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - (
+    - )
+    - _
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - (
-    - )
-    - _
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   Num:
-  - - {t: ▽, type: trans}
-    - '['
+  - - '['
     - '7'
     - '8'
     - '9'
@@ -199,41 +176,35 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ;
+  - - ;
     - '4'
     - '5'
     - '6'
     - '='
     - {t: ▽, type: trans}
     - +
-  - - '-'
+    - '-'
     - '*'
     - KP DIVIDE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '`'
+  - - '`'
     - '1'
     - '2'
     - '3'
     - \
-  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - (
     - )
     - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
-    - .
+  - - .
     - '0'
     - '-'
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
   Fun:
-  - - ''
-    - F12
+  - - F12
     - F7
     - F8
     - F9
@@ -242,35 +213,30 @@ layers:
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
-  - - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - ''
-    - F11
+    - {t: BT, h: '4'}
+  - - F11
     - F4
     - F5
     - F6
     - SCROLLLOCK
     - {t: BT DISC, h: '0'}
     - {t: BT DISC, h: '1'}
-  - - {t: BT DISC, h: '2'}
+    - {t: BT DISC, h: '2'}
     - {t: BT DISC, h: '3'}
     - {t: BT DISC, h: '4'}
-    - {t: ▽, type: trans}
-    - ''
-    - F10
+  - - F10
     - F1
     - F2
     - F3
     - PAUSE BREAK
-  - - OUT BLE
+    - OUT BLE
     - OUT USB
     - {t: ▽, type: trans}
     - BT CLR ALL
     - BT CLR
+  - - {t: Base, h: toggle}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {t: Base, h: toggle}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
