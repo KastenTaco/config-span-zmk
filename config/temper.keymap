@@ -127,17 +127,6 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-
-
-ZMK_CONDITIONAL_LAYER(NUM FUN, SYS)
-
-ZMK_LAYER(Qwerty,
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp Q      &kp W      &kp E        &kp R         &kp T             &kp F         &kp G         &kp C         &kp R         &kp L
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI A   &hml LALT S  &hml LCTRL D  &hml LSHFT F      &kp G             &kp D     &hmr RSHFT H  &hmr RCTRL T   &hmr RALT N   &hmr RGUI S
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z      &kp X         &kp C         &kp /*
  * https://github.com/zmkfirmware/zmk/blob/main/app/include/dt-bindings/zmk/keys.h
  */
 
@@ -270,7 +259,7 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
 
 ZMK_CONDITIONAL_LAYER(MED, NAV, MOU, SYM, NUM, FUN)
 
-ZMK_LAYER(Dvorak,
+ZMK_LAYER(Qwerty,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         &kp Q           &kp W           &kp E           &kp R             &kp T           &kp Y        &kp U            &kp I         &kp O            &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├───────────┼─────────────┼─────────────┼─────────────┼─────────────┤
