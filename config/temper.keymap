@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // docs: https://zmk.dev/docs/behaviors/hold-tap
-#define TAPPING_TERM_MS 300 // how long a key must be pressed to trigger hold behavior.
+#define TAPPING_TERM_MS 400 // how long a key must be pressed to trigger hold behavior.
 #define COMBO_TERM_MS 30
 
 #define DEF 0
