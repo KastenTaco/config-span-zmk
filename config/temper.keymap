@@ -16,6 +16,14 @@
 #define TAPPING_TERM_MS 300 // how long a key must be pressed to trigger hold behavior.
 #define COMBO_TERM_MS 30
 
+#define DEF 0
+#define MED 1
+#define NAV 2
+#define MOU 3
+#define SYM 4
+#define NUM 5
+#define FUN 6
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -28,10 +36,10 @@
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-&kp Q           &kp W           &kp E         &kp R             &kp T          &kp Y        &kp U            &kp I         &kp O            &kp P                    
-&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G          &kp H        &mt RSHIFT J     &mt RCTRL K   &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  
-&kp Z           &kp X           &kp C         &kp V             &kp B          &kp N        &kp M            &kp COMMA     &kp DOT          &kp FSLH                 
-                                &lt 1 ESCAPE  &lt 2 TAB         &lt 3 ENTER    &lt 4 SPACE  &lt 5 BACKSPACE  &lt 6 DELETE
+&kp Q           &kp W           &kp E           &kp R             &kp T          &kp Y          &kp U              &kp I           &kp O            &kp P                    
+&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G          &kp H          &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  
+&kp Z           &kp X           &kp C           &kp V             &kp B          &kp N          &kp M              &kp COMMA       &kp DOT          &kp FSLH                 
+                                &lt MED ESCAPE  &lt NAV TAB       &lt MOU ENTER  &lt SYM SPACE  &lt NUM BACKSPACE  &lt FUN DELETE
                         >;
                 };
                 med_layer {
