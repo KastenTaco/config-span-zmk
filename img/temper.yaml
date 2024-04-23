@@ -22,10 +22,10 @@ layers:
     - .
     - {t: /, h: ''''}
   - - {t: ESCAPE, h: Med}
-    - {t: TAB, h: Nav}
-    - {t: ENTER, h: Mou}
-    - {t: SPACE, h: Sym}
-    - {t: BACKSPACE, h: Num}
+    - {t: ENTER, h: Nav}
+    - {t: TAB, h: Mou}
+    - {t: BACKSPACE, h: Sym}
+    - {t: SPACE, h: Num}
     - {t: DELETE, h: Fun}
   Med:
   - - {t: ▽, type: trans}
