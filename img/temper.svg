@@ -280,6 +280,30 @@ path.combo {
 <tspan x="119" dy="-0.6em">Ctl+</tspan><tspan x="119" dy="1.2em">X</tspan>
 </text>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="164" y="26" width="28" height="26" class="combo"/>
+<text x="178" y="39" class="combo tap">
+<tspan x="178" dy="-0.6em">Ctl+</tspan><tspan x="178" dy="1.2em">Y</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="105" y="25" width="28" height="26" class="combo"/>
+<text x="119" y="38" class="combo tap">
+<tspan x="119" dy="-0.6em">Ctl+</tspan><tspan x="119" dy="1.2em">Z</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="536" y="97" width="28" height="26" class="combo"/>
+<text x="550" y="110" class="combo tap">[</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="595" y="110" width="28" height="26" class="combo"/>
+<text x="609" y="123" class="combo tap">-</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="655" y="81" width="28" height="26" class="combo"/>
+<text x="669" y="94" class="combo tap">]</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 354)" class="layer-Med">
@@ -1056,6 +1080,30 @@ path.combo {
 <text x="119" y="150" class="combo tap">
 <tspan x="119" dy="-0.6em">Ctl+</tspan><tspan x="119" dy="1.2em">X</tspan>
 </text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="164" y="26" width="28" height="26" class="combo"/>
+<text x="178" y="39" class="combo tap">
+<tspan x="178" dy="-0.6em">Ctl+</tspan><tspan x="178" dy="1.2em">Y</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="105" y="25" width="28" height="26" class="combo"/>
+<text x="119" y="38" class="combo tap">
+<tspan x="119" dy="-0.6em">Ctl+</tspan><tspan x="119" dy="1.2em">Z</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="536" y="97" width="28" height="26" class="combo"/>
+<text x="550" y="110" class="combo tap">[</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="595" y="110" width="28" height="26" class="combo"/>
+<text x="609" y="123" class="combo tap">-</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="655" y="81" width="28" height="26" class="combo"/>
+<text x="669" y="94" class="combo tap">]</text>
 </g>
 </g>
 </g>
