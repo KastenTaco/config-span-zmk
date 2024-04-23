@@ -14,7 +14,7 @@
 
 // docs: https://zmk.dev/docs/behaviors/hold-tap
 #define TAPPING_TERM_MS 400 // how long a key must be pressed to trigger hold behavior.
-#define COMBO_TERM_MS 30
+#define COMBO_TERM_MS 150
 
 #define DEF 0
 #define MED 1
