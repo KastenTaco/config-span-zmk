@@ -11,7 +11,16 @@ layers:
     - {t: K, h: RCTRL}
     - {t: L, h: RIGHT ALT}
     - {t: ;, h: RIGHT GUI}
-  - [Z, X, C, V, B, N, M, ',', ., /]
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - {t: /, h: ''''}
   - - {t: ESCAPE, h: Med}
     - {t: TAB, h: Nav}
     - {t: ENTER, h: Mou}
@@ -186,7 +195,7 @@ layers:
     - +
     - '-'
     - '*'
-    - KP DIVIDE
+    - /
   - - '`'
     - '1'
     - '2'
