@@ -24,8 +24,8 @@ layers:
   - - {t: ESCAPE, h: Med}
     - {t: ENTER, h: Nav}
     - {t: TAB, h: Mou}
-    - {t: SPACE, h: Sym}
-    - {t: BACKSPACE, h: Num}
+    - {t: BACKSPACE, h: Sym}
+    - {t: SPACE, h: Num}
     - {t: DELETE, h: Fun}
   Med:
   - - {t: ▽, type: trans}
