@@ -38,8 +38,9 @@
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 50
 
-// screenshot
-ZMK_COMBO(refr, &kp PSCRN, RL0 RL1, DEF NUM, COMBO_TERM_FAST)
+// screenshot and refresh
+ZMK_COMBO(refr, &kp PSCRN, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF NUM, COMBO_TERM_FAST)        
 
 // Cut Copy Paste
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF NUM, COMBO_TERM_FAST)
