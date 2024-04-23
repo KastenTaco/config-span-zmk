@@ -20,7 +20,7 @@ layers:
     - M
     - ','
     - .
-    - {t: /, h: APOSRIGHT GUI}
+    - {t: /, h: RIGHT GUI}
   - - {t: ESCAPE, h: Med}
     - {t: ENTER, h: Nav}
     - {t: TAB, h: Mou}
