@@ -22,8 +22,8 @@ layers:
     - .
     - {t: /, h: RIGHT GUI}
   - - {t: ESCAPE, h: Med}
-    - {t: ENTER, h: Nav}
-    - {t: TAB, h: Mou}
+    - {t: TAB, h: Nav}
+    - {t: ENTER, h: Mou}
     - {t: BACKSPACE, h: Sym}
     - {t: SPACE, h: Num}
     - {t: DELETE, h: Fun}
