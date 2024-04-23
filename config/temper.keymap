@@ -15,6 +15,9 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
+#define QUICK_TAP_MS 175
+
 // docs: https://zmk.dev/docs/behaviors/hold-tap
 #define TAPPING_TERM_MS 400 // how long a key must be pressed to trigger hold behavior.
 #define COMBO_TERM_MS 150
@@ -73,7 +76,7 @@ ZMK_COMBO(rbrc, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
 &kp Q           &kp W           &kp E           &kp R             &kp T          &kp Y              &kp U              &kp I           &kp O            &kp P                    
 &kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G          &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt SEMICOLON APOS
 &mt LEFT_GUI Z  &kp X           &kp C           &kp V             &kp B          &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI FSLH                 
-                                &lt MED ESCAPE  &lt NAV ENTER     &lt MOU TAB    &lt SYM BACKSPACE  &lt NUM SPACE      &lt FUN DELETE
+                                &lt MED ESCAPE  &lt NAV TAB       &lt MOU ENTER    &lt SYM BACKSPACE  &lt NUM SPACE      &lt FUN DELETE
                         >;
                 };
                 med_layer {
