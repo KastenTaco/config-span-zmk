@@ -272,11 +272,11 @@ combos:
   k: Ctl+ Z
   l: [Base, Num]
 - p: [15, 16]
-  k: '['
+  k: (
   l: [Base, Num]
 - p: [16, 27]
   k: '-'
   l: [Base, Num]
 - p: [17, 18]
-  k: ']'
+  k: )
   l: [Base, Num]
