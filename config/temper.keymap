@@ -31,7 +31,7 @@
 // Combos
 
 #undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <150>;
+#define COMBO_HOOK
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 50
 
@@ -63,7 +63,7 @@ ZMK_COMBO(rbrc, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <500>;
+            require-prior-idle-ms = <250>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
