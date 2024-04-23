@@ -4,10 +4,9 @@ Temper Settings
 Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
 mechanical keyboard with [nice!view](https://nicekeyboards.com/docs/nice-view/) displays.
 
- * Dvorak base layout
+ * QWERTY base layout
  * [timer-less home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
- * sticky shift on right thumb, double-tap (or shift+tap) activates caps-word
- * shift+space morphs into dot+space+sticky-shift
+ * moved GUI key to lower row
 
 ![keymap image](img/temper.svg)
 
