@@ -1,7 +1,7 @@
 layers:
   Base:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: LEFT GUI}
+  - - A
     - {t: S, h: LEFT ALT}
     - {t: D, h: LCTRL}
     - {t: F, h: LEFT SHIFT}
@@ -10,8 +10,8 @@ layers:
     - {t: J, h: RSHIFT}
     - {t: K, h: RCTRL}
     - {t: L, h: RIGHT ALT}
-    - {t: ;, h: RIGHT GUI}
-  - - Z
+    - {t: '''', h: ;}
+  - - {t: Z, h: LEFT GUI}
     - X
     - C
     - V
@@ -20,7 +20,7 @@ layers:
     - M
     - ','
     - .
-    - {t: /, h: ''''}
+    - {t: /, h: APOSRIGHT GUI}
   - - {t: ESCAPE, h: Med}
     - {t: ENTER, h: Nav}
     - {t: TAB, h: Mou}
