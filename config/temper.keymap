@@ -61,10 +61,10 @@ ZMK_COMBO(rbrc, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <300>;
-            flavor = "tap-preferred";
+            require-prior-idle-ms = <0>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
