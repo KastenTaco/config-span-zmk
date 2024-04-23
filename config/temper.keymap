@@ -21,7 +21,7 @@
 // docs: https://zmk.dev/docs/behaviors/hold-tap
 #define TAPPING_TERM_MS 400 // how long a key must be pressed to trigger hold behavior.
 #define COMBO_TERM_MS 150
-#define REQUIRE_PRIOR_IDLE_MS 150
+#define REQUIRE_PRIOR_IDLE_MS 200
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  /* left hand  */
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  /* right hand */
@@ -74,10 +74,10 @@ ZMK_COMBO(rbrc, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-&kp Q           &kp W           &kp E           &kp R             &kp T          &kp Y              &kp U              &kp I           &kp O            &kp P                    
-&kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G          &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt SEMICOLON APOS
-&mt LEFT_GUI Z  &kp X           &kp C           &kp V             &kp B          &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI FSLH                 
-                                &lt MED ESCAPE  &lt NAV TAB       &lt MOU ENTER    &lt SYM BACKSPACE  &lt NUM SPACE      &lt FUN DELETE
+&kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
+&kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt SEMICOLON APOS
+&mt LEFT_GUI Z  &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI FSLH                 
+                                &lt MED ESCAPE  &lt NAV TAB       &lt MOU ENTER    &lt SYM SPACE      &lt NUM BACKSPACE  &lt FUN DELETE
                         >;
                 };
                 med_layer {
