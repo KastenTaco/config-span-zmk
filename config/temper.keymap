@@ -31,12 +31,15 @@
 #define NUM 5
 #define FUN 6
 
-//Combos
+// Combos
 
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <150>;
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 50
+
+// screenshot
+ZMK_COMBO(refr, &kp PSCRN, RL0 RL1, DEF NUM, COMBO_TERM_FAST)
 
 // Cut Copy Paste
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF NUM, COMBO_TERM_FAST)
@@ -52,8 +55,7 @@ ZMK_COMBO(lbrc, &kp LEFT_BRACKET, RM0 RM1, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(dash, &kp MINUS, RM1 RB2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc, &kp RIGHT_BRACKET, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
 
-//screenshot
-ZMK_COMBO(refr, &kp PSCRN, RL0 RL1, DEF NUM, COMBO_TERM_FAST)
+
 
 / {
         keymap {
