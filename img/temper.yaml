@@ -250,12 +250,12 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
 combos:
-- p: [23, 22]
-  k: Ctl+ X
+- p: [24, 23]
+  k: Ctl+ V
   l: [Base, Num]
-- p: [22, 21]
+- p: [23, 22]
   k: Ctl+ C
   l: [Base, Num]
-- p: [21, 20]
-  k: Ctl+ V
+- p: [22, 21]
+  k: Ctl+ X
   l: [Base, Num]
