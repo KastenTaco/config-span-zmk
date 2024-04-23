@@ -249,3 +249,13 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
+combos:
+- p: [25, 26]
+  k: Ctl+ X
+  l: [Base, Num]
+- p: [26, 27]
+  k: Ctl+ C
+  l: [Base, Num]
+- p: [27, 28]
+  k: Ctl+ V
+  l: [Base, Num]
