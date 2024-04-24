@@ -1,7 +1,7 @@
 Temper Settings
 =============== 
 
-This project is still being developed as I am looking for a keymap I really like. Comments and code might be unstructured or incorrect as changes are implemented.
+This project is still being developed as I am polishing the keymap for something I really like. Comments and code might be unstructured or incorrect as changes are implemented.
 
 Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
 mechanical keyboard.
