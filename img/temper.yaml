@@ -182,8 +182,8 @@ layers:
     - '9'
     - ']'
     - {t: ▽, type: trans}
-    - '&LT'
-    - '&GT'
+    - <
+    - '>'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - ;
