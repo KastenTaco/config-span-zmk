@@ -280,3 +280,9 @@ combos:
 - p: [17, 18]
   k: )
   l: [Base, Num]
+- p: [8, 9]
+  k: BACKSPACE
+  l: [Base, Num]
+- p: [18, 19]
+  k: ''''
+  l: [Base, Num]
