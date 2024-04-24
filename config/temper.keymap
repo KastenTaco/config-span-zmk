@@ -61,7 +61,7 @@ ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_FAST)
 &mt{
         tapping-term-ms = <350>;
         quick-tap-ms = <250>;
-        require-prior-idle-ms = <350>;
+        require-prior-idle-ms = <250>;
 };
 
 &lt{
