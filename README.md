@@ -1,12 +1,15 @@
 Temper Settings
-===============
+=============== 
+
+This project is still being developed as I am looking for a keymap I really like. Comments and code might be unstructured or incorrect as changes are implemented.
 
 Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
 mechanical keyboard.
 
  * QWERTY base layout
- * [timer-less home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
- * moved GUI key to lower row
+ * Modified Miryoku layout
+ * moved GUI key to lower row due to many false activations
+ * Added a row of combos and hold/tap delays to make better use of the 36 key layout    
 
 ![keymap image](img/temper.svg)
 
