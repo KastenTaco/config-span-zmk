@@ -35,8 +35,8 @@
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 50
 
-// screenshot and refresh
-ZMK_COMBO(refr, &kp PRINTSCREEN, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
+// fullscreen and refresh
+ZMK_COMBO(refr, &kp F11, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
 ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF NUM, COMBO_TERM_FAST)        
 
 // Cut Copy Paste
@@ -50,8 +50,8 @@ ZMK_COMBO(redo, &kp LC(Z), LT2 LT3, DEF NUM, COMBO_TERM_FAST)
 
 // Symbols on Base paranthesis minus
 ZMK_COMBO(lbrc, &kp LPAR, RM0 RM1, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(dash, &kp MINUS, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc, &kp RPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(dash, &kp MINUS, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
 
 //backspace and apost   
 ZMK_COMBO(rbrc, &kp BACKSPACE, RT3 RT4, DEF NUM, COMBO_TERM_FAST)
