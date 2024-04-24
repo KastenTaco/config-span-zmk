@@ -264,7 +264,7 @@ path.combo {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="536" y="41" width="28" height="26" class="combo"/>
-<text x="550" y="54" class="combo tap">PSCRN</text>
+<text x="550" y="54" class="combo tap"><tspan style="font-size: 64%">PRINTSCREEN</tspan></text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="536" y="153" width="28" height="26" class="combo"/>
@@ -1081,7 +1081,7 @@ path.combo {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="536" y="41" width="28" height="26" class="combo"/>
-<text x="550" y="54" class="combo tap">PSCRN</text>
+<text x="550" y="54" class="combo tap"><tspan style="font-size: 64%">PRINTSCREEN</tspan></text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="536" y="153" width="28" height="26" class="combo"/>
