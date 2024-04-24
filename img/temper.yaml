@@ -10,7 +10,7 @@ layers:
     - {t: J, h: RSHIFT}
     - {t: K, h: RCTRL}
     - {t: L, h: RIGHT ALT}
-    - {t: '''', h: ;}
+    - {t: ;, h: ''''}
   - - {t: Z, h: LEFT GUI}
     - X
     - C
@@ -182,8 +182,8 @@ layers:
     - '9'
     - ']'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&LT'
+    - '&GT'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - ;
