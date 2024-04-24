@@ -127,10 +127,10 @@ ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_FAST)
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-&trans  &trans  &trans  &trans  &trans   &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  
-&trans  &trans  &trans  &trans  &trans   &none       &trans       &trans       &trans     &trans      
-&trans  &trans  &trans  &trans  &trans   &trans      &trans       &trans       &trans     &trans      
-                &trans  &trans  &trans   &mkp LCLK   &mkp MCLK    &mkp MB2
+&trans  &trans  &trans  &trans  &kp PRINTSCREEN   &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  
+&trans  &trans  &trans  &trans  &trans            &none       &trans       &trans       &trans     &trans      
+&trans  &trans  &trans  &trans  &trans            &trans      &trans       &trans       &trans     &trans      
+                &trans  &trans  &trans            &mkp LCLK   &mkp MCLK    &mkp MB2
                         >;
                 };
                 sym_layer {
