@@ -36,7 +36,7 @@
 #define COMBO_TERM_SLOW 50
 
 // screenshot and refresh
-ZMK_COMBO(refr, &kp PSCRN, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp PRINTSCREEN, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
 ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF NUM, COMBO_TERM_FAST)        
 
 // Cut Copy Paste
@@ -61,7 +61,7 @@ ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_FAST)
 &mt{
         tapping-term-ms = <350>;
         quick-tap-ms = <250>;
-        require-prior-idle-ms = <250>;
+        require-prior-idle-ms = <200>;
 };
 
 &lt{
