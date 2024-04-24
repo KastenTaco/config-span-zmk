@@ -106,7 +106,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - PRINTSCREEN
     - REDO
     - PASTE
     - COPY
