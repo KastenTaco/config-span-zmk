@@ -33,11 +33,11 @@
 #undef COMBO_HOOK
 #define COMBO_HOOK
 #define COMBO_TERM_FAST 25
-#define COMBO_TERM_SLOW 100
+#define COMBO_TERM_SLOW 50
 
 // fullscreen and refresh
-ZMK_COMBO(refr, &kp F11, RT0 RT1, DEF NUM, COMBO_TERM_SLOW)        
-ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF NUM, COMBO_TERM_SLOW)        
+ZMK_COMBO(refr, &kp F11, RT0 RT1, DEF NUM, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF NUM, COMBO_TERM_FAST)        
 
 // Cut Copy Paste
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF NUM, COMBO_TERM_FAST)
