@@ -54,14 +54,15 @@ ZMK_COMBO(rbrc, &kp RPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
 ZMK_COMBO(dash, &kp MINUS, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
 
 //backspace and apost   
-ZMK_COMBO(rbrc, &kp BACKSPACE, RT3 RT4, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc, &kp BACKSPACE, RT3 RT4, DEF NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_SLOW)
 
 
 &mt{
+        flavor = "balanced";
         tapping-term-ms = <350>;
         quick-tap-ms = <250>;
-        require-prior-idle-ms = <200>;
+        require-prior-idle-ms = <250>;
 };
 
 &lt{
