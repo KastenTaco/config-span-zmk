@@ -65,8 +65,8 @@ ZMK_COMBO(apos, &kp APOS, RM3 RM4, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 
 //Bootloader
-ZMK_COMBO(lrst, &caps_word, LT4 LB0, DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(rrst, &caps_word, RT4 RB0, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(lrst, &bootloader, LT4 LB0, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 
 &mt{
         flavor = "balanced";
