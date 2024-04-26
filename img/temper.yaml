@@ -10,7 +10,7 @@ layers:
     - {t: J, h: RSHIFT}
     - {t: K, h: RCTRL}
     - {t: L, h: RIGHT ALT}
-    - {t: ;, h: /}
+    - {t: ;, h: RIGHT GUI}
   - - Z
     - X
     - C
@@ -20,7 +20,7 @@ layers:
     - M
     - ','
     - .
-    - {t: '''', h: RIGHT GUI}
+    - {t: /, h: ''''}
   - - {t: ESCAPE, h: Med}
     - {t: ENTER, h: Nav}
     - {t: TAB, h: Mou}
@@ -286,6 +286,12 @@ combos:
 - p: [18, 19]
   k: ''''
   l: [Base]
-- p: [11, 16]
+- p: [13, 16]
+  k: '&caps_word'
+  l: [Base]
+- p: [0, 24]
+  k: '&caps_word'
+  l: [Base]
+- p: [9, 25]
   k: '&caps_word'
   l: [Base]
