@@ -286,12 +286,6 @@ combos:
 - p: [18, 19]
   k: ''''
   l: [Base, Num]
-- p: [18, 16]
+- p: [11, 16]
   k: '&caps_word'
-  l: [Base, Num]
-- p: [4, 20]
-  k: '&bootloader'
-  l: [Base, Num]
-- p: [9, 25]
-  k: '&bootloader'
   l: [Base, Num]
