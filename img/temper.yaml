@@ -290,8 +290,8 @@ combos:
   k: '&caps_word'
   l: [Base]
 - p: [0, 24]
-  k: '&caps_word'
+  k: '&bootloader'
   l: [Base]
 - p: [9, 25]
-  k: '&caps_word'
+  k: '&bootloader'
   l: [Base]

@@ -330,13 +330,13 @@ path.combo {
 <path d="M148,128 l-100,-35" class="combo"/>
 <path d="M148,128 l100,35" class="combo"/>
 <rect rx="6" ry="6" x="134" y="115" width="28" height="26" class="combo"/>
-<text x="148" y="128" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<text x="148" y="128" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 <g class="combo combopos-14">
 <path d="M639,128 l100,-35" class="combo"/>
 <path d="M639,128 l-100,35" class="combo"/>
 <rect rx="6" ry="6" x="625" y="115" width="28" height="26" class="combo"/>
-<text x="639" y="128" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<text x="639" y="128" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 </g>
 </g>
