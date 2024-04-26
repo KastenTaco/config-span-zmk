@@ -93,8 +93,8 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
 &kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
-&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
-&kp Z           &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt APOS FSLH
+&kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt APOS SEMICOLON
+&mt LEFT_GUI Z  &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI FSLH
                                 &lt MED ESCAPE  &lt NAV ENTER     &lt MOU TAB      &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
                         >;
                 };
