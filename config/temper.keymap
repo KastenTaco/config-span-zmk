@@ -58,11 +58,8 @@ ZMK_COMBO(rbrc, &kp BACKSPACE, RT3 RT4, DEF NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(rbrc, &kp APOS, RM3 RM4, DEF NUM, COMBO_TERM_SLOW)
 
 //Caps word
-ZMK_COMBO(rbrc, &caps_word, RM3 RM1, DEF NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(rbrc, &caps_word, LM3 RM1, DEF NUM, COMBO_TERM_SLOW)
 
-//Bootloader
-ZMK_COMBO(rbrc, &bootloader, LT0 LB4, DEF NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(rbrc, &bootloader, RT4 RB0, DEF NUM, COMBO_TERM_SLOW)
 
 &mt{
         flavor = "balanced";
