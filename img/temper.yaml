@@ -291,7 +291,7 @@ combos:
   l: [Base]
 - p: [0, 24]
   k: '&bootloader'
-  l: [Base]
+  l: [Fun]
 - p: [9, 25]
   k: '&bootloader'
-  l: [Base]
+  l: [Med]
