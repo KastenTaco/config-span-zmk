@@ -62,8 +62,11 @@ ZMK_COMBO(back, &kp BACKSPACE, RT3 RT4, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(apos, &kp APOS, RM3 RM4, DEF, COMBO_TERM_SLOW)
 
 //Caps word
-ZMK_COMBO(caps, &caps_word, LM3 RM1, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 
+//Bootloader
+ZMK_COMBO(lrst, &caps_word, LT4 LB0, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rrst, &caps_word, RT4 RB0, DEF, COMBO_TERM_SLOW)
 
 &mt{
         flavor = "balanced";
@@ -90,8 +93,8 @@ ZMK_COMBO(caps, &caps_word, LM3 RM1, DEF, COMBO_TERM_SLOW)
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
 &kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
-&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt FSLH SEMICOLON
-&kp Z           &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI APOS
+&mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
+&kp Z           &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt APOS FSLH
                                 &lt MED ESCAPE  &lt NAV ENTER     &lt MOU TAB      &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
                         >;
                 };
