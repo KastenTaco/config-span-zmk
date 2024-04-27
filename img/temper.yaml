@@ -27,6 +27,80 @@ layers:
     - {t: BACKSPACE, h: Sym}
     - {t: SPACE, h: Num}
     - {t: DELETE, h: Fun}
+  Game:
+  - - TAB
+    - Q
+    - W
+    - E
+    - R
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - G
+    - A
+    - S
+    - D
+    - F
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - LCTRL
+    - Z
+    - X
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: LSHIFT, h: M}
+    - {t: ENTER, h: GameN}
+    - {t: SPACE, h: TAB}
+    - {t: BACKSPACE, h: Sym}
+    - {t: SPACE, h: Num}
+    - {t: DELETE, h: Fun}
+  GameN:
+  - - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - G
+    - A
+    - S
+    - D
+    - F
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - LCTRL
+    - Z
+    - X
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: LSHIFT, h: M}
+    - {type: held}
+    - {t: SPACE, h: TAB}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   Med:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -249,80 +323,6 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-  Game:
-  - - TAB
-    - Q
-    - W
-    - E
-    - R
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - G
-    - A
-    - S
-    - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - LCTRL
-    - Z
-    - X
-    - C
-    - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: LSHIFT, h: M}
-    - {t: ENTER, h: GameN}
-    - {t: SPACE, h: TAB}
-    - {t: BACKSPACE, h: Sym}
-    - {t: SPACE, h: Num}
-    - {t: DELETE, h: Fun}
-  GameN:
-  - - '1'
-    - '2'
-    - '3'
-    - '4'
-    - '5'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - G
-    - A
-    - S
-    - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - LCTRL
-    - Z
-    - X
-    - C
-    - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: LSHIFT, h: M}
-    - {type: held}
-    - {t: SPACE, h: TAB}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
 combos:
 - p: [5, 6]
   k: F11
