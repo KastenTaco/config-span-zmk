@@ -35,25 +35,24 @@
 
 #undef COMBO_HOOK
 #define COMBO_HOOK
-#define COMBO_TERM_FAST 25
+#define COMBO_TERM_FAST 10
 #define COMBO_TERM_SLOW 50
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
 
-// fullscreen and refresh
-ZMK_COMBO(fscr, &kp F11, RT0 RT1, DEF, COMBO_TERM_FAST)        
+// fullscreen and refresh      
 ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF, COMBO_TERM_FAST)        
 
 // Cut Copy Paste
-ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_SLOW)
 
 // Previous and next
-ZMK_COMBO(undo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(redo, &kp LC(Z), LT2 LT3, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(undo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(redo, &kp LC(Z), LT2 LT3, DEF, COMBO_TERM_SLOW)
 
 // Symbols on Base paranthesis minus
 ZMK_COMBO(lbrc, &kp LPAR, RM0 RM1, DEF, COMBO_TERM_FAST)
@@ -68,8 +67,8 @@ ZMK_COMBO(apos, &kp APOS, RM3 RM4, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 
 //Bootloader
-ZMK_COMBO(lrst, &bootloader, LT4 LB0, FUN, COMBO_TERM_SLOW)
-ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
+ZMK_COMBO(lrst, &bootloader, LT4 LB0, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 
 &mt{
         flavor = "balanced";
@@ -98,7 +97,7 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
 &kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
 &kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt APOS SEMICOLON
 &mt LEFT_GUI Z  &kp X           &kp C           &kp V             &kp B            &kp N              &kp M              &kp COMMA       &kp DOT          &mt RIGHT_GUI FSLH
-                                &lt MED ESCAPE  &lt NAV ENTER     &lt MOU TAB      &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
+                                &lt MED ESCAPE  &lt NAV ENTER     &lt MOU TAB      &lt SYM BACKSPACE  &lt NUM SPACE      &lt FUN DELETE
                         >;
                 };
 
@@ -117,17 +116,17 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
                         >;
                 };
                 gan_layer {
-                        display-name = "GameN";
+                        display-name = "Gnum";
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-   &kp 1      &kp 2         &kp 3          &kp 4         &kp 5            &trans  &trans  &trans  &trans  &trans                   
+   &kp N1     &kp N2        &kp N3         &kp N4        &kp N5           &trans  &trans  &trans  &trans  &trans                   
    &kp G      &kp A         &kp S          &kp D         &kp F            &trans  &trans  &trans  &trans  &trans
    &kp LCTRL  &kp Z         &kp X          &kp C         &kp V            &trans  &trans  &trans  &trans  &trans
-                            &mt M LSHIFT   &trans        &mt TAB SPACE    &trans  &trans  &trans
+                            &trans         &trans        &trans           &trans  &trans  &trans
                         >;
                 };
 
