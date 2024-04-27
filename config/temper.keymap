@@ -187,7 +187,7 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
 &kp F12  &kp F7  &kp F8    &kp F9    &kp PRINTSCREEN    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4   
 &kp F11  &kp F4  &kp F5    &kp F6    &kp SCROLLLOCK     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4  
 &kp F10  &kp F1  &kp F2    &kp F3    &kp PAUSE_BREAK    &out OUT_BLE   &out OUT_USB   &trans         &bt BT_CLR_ALL  &bt BT_CLR     
-                 &tog DEF  &tog GAM  &trans             &trans         &trans         &trans
+                 &tog DEF  &tog GAM  &to DEF            &trans         &trans         &trans
                         >;
                 };
 
@@ -199,10 +199,10 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-   &kp TAB    &kp Q         &kp W          &kp E          &kp R            &trans  &trans  &trans  &trans  &trans                   
-   &kp G      &kp A         &kp S          &kp D          &kp F            &trans  &trans  &trans  &trans  &trans
-   &kp LCTRL  &kp Z         &kp X          &kp C          &kp V            &trans  &trans  &trans  &trans  &trans
-                            &mt M LSHIFT   &lt GAN ENTER  &mt TAB SPACE    &trans  &trans  &trans
+   &kp TAB    &kp Q         &kp W          &kp E          &kp R            &trans             &trans         &trans          &trans  &trans                   
+   &kp G      &kp A         &kp S          &kp D          &kp F            &trans             &trans         &trans          &trans  &trans
+   &kp LCTRL  &kp Z         &kp X          &kp C          &kp V            &trans             &trans         &trans          &trans  &trans
+                            &mt M LSHIFT   &lt GAN ENTER  &mt TAB SPACE    &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
                         >;
                 };
                 gan_layer {
@@ -216,7 +216,7 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, MED, COMBO_TERM_SLOW)
    &kp 1      &kp 2         &kp 3          &kp 4         &kp 5            &trans  &trans  &trans  &trans  &trans                   
    &kp G      &kp A         &kp S          &kp D         &kp F            &trans  &trans  &trans  &trans  &trans
    &kp LCTRL  &kp Z         &kp X          &kp C         &kp V            &trans  &trans  &trans  &trans  &trans
-                            &mt M LSHIFT  &lt GAN ENTER  &mt TAB SPACE    &trans  &trans  &trans
+                            &mt M LSHIFT   &trans        &mt TAB SPACE    &trans  &trans  &trans
                         >;
                 };
         };
