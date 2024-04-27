@@ -245,7 +245,7 @@ layers:
     - BT CLR
   - - {t: Base, h: toggle}
     - {t: Game, h: toggle}
-    - {t: ▽, type: trans}
+    - {t: Base, h: toggle}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
@@ -283,9 +283,9 @@ layers:
   - - {t: LSHIFT, h: M}
     - {t: ENTER, h: GameN}
     - {t: SPACE, h: TAB}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: BACKSPACE, h: Sym}
+    - {t: SPACE, h: Num}
+    - {t: DELETE, h: Fun}
   GameN:
   - - '1'
     - '2'
@@ -318,7 +318,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: LSHIFT, h: M}
-    - {t: ENTER, h: GameN, type: held}
+    - {type: held}
     - {t: SPACE, h: TAB}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
