@@ -114,7 +114,7 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
    &kp TAB       &kp Q           &kp W          &kp E          &kp R            &trans             &trans         &trans  &trans  &trans                   
    &mt LSHIFT G  &kp A           &kp S          &kp D          &kp F            &trans             &trans         &trans  &trans  &trans
    &kp LCTRL     &mt LEFT_ALT Z  &kp X          &kp C          &kp V            &trans             &trans         &trans  &trans  &trans
-                                 &mt ESCAPE M   &lt MOU ENTER  &lt GAN SPACE    &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
+                                 &mt ESCAPE M   &lt GAN ENTER  &lt MOU SPACE    &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
                         >;
                 };
                 gan_layer {
