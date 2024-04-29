@@ -45,10 +45,11 @@
 // fullscreen and refresh      
 ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF, COMBO_TERM_FAST)        
 
-// Cut Copy Paste
+// Cut Copy Paste Select-All
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(sall, &kp LC(A), LM4 LM3, DEF, COMBO_TERM_FAST)
 
 // Previous and next
 ZMK_COMBO(undo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_SLOW)
@@ -69,6 +70,7 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 //Bootloader
 ZMK_COMBO(lrst, &bootloader, LT4 LB0, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
+
 
 &mt{
         flavor = "balanced";
@@ -109,10 +111,10 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-   &kp TAB    &kp Q         &kp W          &kp E          &kp R            &trans             &trans         &trans          &trans  &trans                   
-   &kp G      &kp A         &kp S          &kp D          &kp F            &trans             &trans         &trans          &trans  &trans
-   &kp LCTRL  &kp Z         &kp X          &kp C          &kp V            &trans             &trans         &trans          &trans  &trans
-                            &mt M LSHIFT   &lt GAN ENTER  &mt TAB SPACE    &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
+   &kp TAB       &kp Q           &kp W          &kp E          &kp R            &trans             &trans         &trans  &trans  &trans                   
+   &mt LSHIFT G  &kp A           &kp S          &kp D          &kp F            &trans             &trans         &trans  &trans  &trans
+   &kp LCTRL     &mt LEFT_ALT Z  &kp X          &kp C          &kp V            &trans             &trans         &trans  &trans  &trans
+                                 &mt ESCAPE M   &lt MOU ENTER  &lt GAN SPACE    &lt SYM BACKSPACE  &lt NUM SPACE  &lt FUN DELETE
                         >;
                 };
                 gan_layer {
@@ -123,7 +125,7 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
-   &kp N1     &kp N2        &kp N3         &kp N4        &kp N5           &trans  &trans  &trans  &trans  &trans                   
+   &kp N1     &kp N2        &kp N3         &kp N4        &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
    &kp G      &kp A         &kp S          &kp D         &kp F            &trans  &trans  &trans  &trans  &trans
    &kp LCTRL  &kp Z         &kp X          &kp C         &kp V            &trans  &trans  &trans  &trans  &trans
                             &trans         &trans        &trans           &trans  &trans  &trans
@@ -170,10 +172,10 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-&trans  &trans  &trans  &trans  &kp PRINTSCREEN   &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  
-&trans  &trans  &trans  &trans  &trans            &none       &trans       &trans       &trans     &trans      
-&trans  &trans  &trans  &trans  &trans            &trans      &trans       &trans       &trans     &trans      
-                &trans  &trans  &trans            &mkp LCLK   &mkp MCLK    &mkp MB2
+&kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &mt PRINTSCREEN K_UNDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  
+&trans      &mkp LCLK    &trans       &mkp MB2   &kp PAGE_UP               &trans      &mkp LCLK    &trans       &mkp MB2   &kp PAGE_UP      
+&trans      &trans       &trans       &trans     &kp PAGE_DOWN             &trans      &trans       &trans       &trans     &kp PAGE_DOWN   
+                         &to DEF      &to GAM    &trans                    &mkp LCLK   &mkp MCLK    &mkp MB2
                         >;
                 };
                 sym_layer {
