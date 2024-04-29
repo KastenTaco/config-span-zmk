@@ -38,7 +38,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - G
+  - - {t: G, h: LSHIFT}
     - A
     - S
     - D
@@ -49,7 +49,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - LCTRL
-    - Z
+    - {t: Z, h: LEFT ALT}
     - X
     - C
     - V
@@ -58,23 +58,14 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: LSHIFT, h: M}
-    - {t: ENTER, h: Gnum}
-    - {t: SPACE, h: TAB}
+  - - {t: M, h: ESCAPE}
+    - {t: ENTER, h: Mou}
+    - {t: SPACE, h: Gnum}
     - {t: BACKSPACE, h: Sym}
     - {t: SPACE, h: Num}
     - {t: DELETE, h: Fun}
   Gnum:
-  - - '1'
-    - '2'
-    - '3'
-    - '4'
-    - '5'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
   - - G
     - A
     - S
@@ -96,8 +87,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -176,38 +167,38 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Mou:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PRINTSCREEN
+  - - REDO
+    - PASTE
+    - COPY
+    - CUT
+    - {t: UNDO, h: PRINTSCREEN}
     - REDO
     - PASTE
     - COPY
     - CUT
     - UNDO
   - - {t: ▽, type: trans}
+    - '&mkp LCLK'
     - {t: ▽, type: trans}
+    - '&mkp MB2'
+    - PAGE UP
     - {t: ▽, type: trans}
+    - '&mkp LCLK'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&mkp MB2'
+    - PAGE UP
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - PAGE DOWN
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - PAGE DOWN
+  - - {t: Base, h: toggle}
+    - {t: Game, h: toggle}
     - {type: held}
     - '&mkp LCLK'
     - '&mkp MCLK'
@@ -335,6 +326,9 @@ combos:
   l: [Base]
 - p: [22, 21]
   k: Ctl+ X
+  l: [Base]
+- p: [10, 11]
+  k: Ctl+ A
   l: [Base]
 - p: [3, 2]
   k: Ctl+ Y
