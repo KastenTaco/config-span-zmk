@@ -38,17 +38,73 @@
 #define COMBO_TERM_FAST 10
 #define COMBO_TERM_SLOW 50
 
+// CAPS WORD
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |XXXFXXX|   G   |   |   H   |XXXJXXX|   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
 
-// fullscreen and refresh      
+// REFRESH
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |XXXNXXX|XXXMXXX|   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF, COMBO_TERM_FAST)        
 
-// Cut Copy Paste Select-All
+// PASTE
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |XXXVXXX|XXXBXXX|   |   N   |   M   |   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF, COMBO_TERM_SLOW)
+
+// COPY
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |XXXCXXX|XXXVXXX|   B   |   |   N   |   M   |   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_SLOW)
+
+// CUT
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |XXXXXXX|XXXCXXX|   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_SLOW)
+
+// SELECT ALL
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |XXXAXXX|XXXSXXX|   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(sall, &kp LC(A), LM4 LM3, DEF, COMBO_TERM_FAST)
 
 // Previous and next
@@ -91,10 +147,19 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 default_layer {
                         display-name = "Base";
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+// hold     |       |  ALT  | CTRL  | SHFT  |       |   |       | SHFT  | CTRL  |  ALT  |       |
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+// hold     |  GUI  |       |       |       |       |   |       |       |       |       |  GUI  |
+
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
+// hold  LAYER              |  GUI  |  NAV  |  MOU  |   |  SYM  |  NUM  |  FUN  |
+
+
                         bindings = <
 &kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
 &kp A           &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G            &kp H              &mt RSHIFT J       &mt RCTRL K     &mt RIGHT_ALT L  &mt APOS SEMICOLON
