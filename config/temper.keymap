@@ -332,23 +332,23 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
                 num_layer {
                         display-name = "Num";
 // -----------------------------------------------------------------------------------------
-// tap      |   [   |   7   |   8   |   9   |   ]   |   |   Y   |   U   |   I   |   O   |   P   |
+// tap      |   [   |   7   |   8   |   9   |   ]   |   |   +   |   7   |   8   |   9   |   *   |
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
-// tap      |   ;   |   4   |   5   |   6   |   =   |   |   H   |   +   |   -   |   *   |   /   |
+// tap      |   ;   |   4   |   5   |   6   |   =   |   |   -   |   4   |   5   |   6   |   /   |
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
-// tap      |   `   |   1   |   2   |   3   |   \   |   |   N   |   (   |   )   |   .   |   /   |
+// tap      |   `   |   1   |   2   |   3   |   \   |   |   0   |   1   |   2   |   3   |   /   |
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
 //
 // tap                      |   .   |   0   |   -   |   | BSPC  |XXXXXXX|  DEL  |
 // hold  LAYER              |       |       |       |   | (SYM) |XXXXXXX| (FUN) |
 
                         bindings = <
-&kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &trans  &trans                &kp GT                 &trans    &trans        
-&kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &trans  &kp PLUS              &kp MINUS              &kp STAR  &kp SLASH 
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans         
-                                &kp PERIOD    &kp N0        &kp MINUS            &trans  &trans                &trans
+&kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR      
+&kp SEMICOLON     &kp N4  &kp N5      &kp N6  &kp EQUAL            &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH 
+&kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &kp N0     &kp N1  &kp N2  &kp N3  &trans         
+                          &kp PERIOD  &kp N0  &kp MINUS            &trans     &trans  &trans
                         >;
                 };
 
