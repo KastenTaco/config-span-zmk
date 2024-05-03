@@ -41,98 +41,122 @@
 // CAPS WORD
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |XXXFXXX|   G   |   |   H   |XXXJXXX|   K   |   L   |   ;   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
 
-// REFRESH
+// REFRESH (F5)
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
-// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          ___________________________________________________________________
-// tap      |   Z   |   X   |   C   |   V   |   B   |   |XXXNXXX|XXXMXXX|   ,   |   .   |   /   |
-
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |XXXHXXX|XXXJXXX|   K   |   L   |   ;   |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-ZMK_COMBO(refr, &kp F5, RB0 RB1, DEF, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp F5, RM0 RM1, DEF, COMBO_TERM_FAST)        
 
 // PASTE
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |XXXVXXX|XXXBXXX|   |   N   |   M   |   ,   |   .   |   /   |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(paste, &kp LC(V), LB0 LB1, DEF, COMBO_TERM_SLOW)
 
 // COPY
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |   X   |XXXCXXX|XXXVXXX|   B   |   |   N   |   M   |   ,   |   .   |   /   |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_SLOW)
 
 // CUT
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |XXXXXXX|XXXCXXX|   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_SLOW)
 
 // SELECT ALL
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |XXXAXXX|XXXSXXX|   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(sall, &kp LC(A), LM4 LM3, DEF, COMBO_TERM_FAST)
 
-// Previous and next
-ZMK_COMBO(undo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(redo, &kp LC(Z), LT2 LT3, DEF, COMBO_TERM_SLOW)
+// UNDO
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |XXXWXXX|XXXEXXX|   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+//
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
+ZMK_COMBO(undo, &kp LC(Z), LT2 LT3, DEF, COMBO_TERM_SLOW)
 
-// Symbols on Base paranthesis minus
-ZMK_COMBO(lbrc, &kp LPAR, RM0 RM1, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc, &kp RPAR, RM1 RM2, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(dash, &kp MINUS, RB1 RB2, DEF, COMBO_TERM_FAST)
+// REDO
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |XXXEXXX|XXXRXXX|   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+//
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
+ZMK_COMBO(redo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_SLOW)
 
-//backspace and apost   
-ZMK_COMBO(back, &kp BACKSPACE, RT3 RT4, DEF, COMBO_TERM_SLOW)
+// APOSTROPHE
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          ___________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |XXXLXXX|XXX;XXX|
+//          ___________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+//
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(apos, &kp APOS, RM3 RM4, DEF, COMBO_TERM_SLOW)
 
-//Caps word
+// CAPS WORD
+// -----------------------------------------------------------------------------------------
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |XXXFXXX|   G   |   |   H   |XXXJXXX|   K   |   L   |   ;   |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
+//
+// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
-
-//Bootloader
-ZMK_COMBO(lrst, &bootloader, LT4 LB0, DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 
 
 &mt{
         flavor = "balanced";
         tapping-term-ms = <350>;
         quick-tap-ms = <250>;
-        require-prior-idle-ms = <200>;
+        require-prior-idle-ms = <150>;
 };
 
 &lt{
@@ -149,16 +173,15 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
 // hold     |       |  ALT  | CTRL  | SHFT  |       |   |       | SHFT  | CTRL  |  ALT  |       |
-//          ___________________________________________________________________
+//          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
 // hold     |  GUI  |       |       |       |       |   |       |       |       |       |  GUI  |
-
+//
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-// hold  LAYER              |  GUI  |  NAV  |  MOU  |   |  SYM  |  NUM  |  FUN  |
-
+// hold  LAYER              | (GUI) | (NAV) | (MOU) |   | (SYM) | (NUM) | (FUN) |
 
                         bindings = <
 &kp Q           &kp W           &kp E           &kp R             &kp T            &kp Y              &kp U              &kp I           &kp O            &kp P                    
@@ -171,10 +194,18 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 gam_layer {
                         display-name = "Game";
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
+// tap      |  TAB  |   Q   |   W   |   E   |   R   |   |   Y   |   U   |   I   |   O   |   P   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   G   |   A   |   S   |   D   |   F   |   |   H   |   J   |   K   |   L   |   ;   |
+// hold     | SHFT  |       |       |       |       |   |       | SHFT  | CTRL  |  ALT  |       |
+//          _____________________________________________________________________________________
+// tap      | CTRL  |   Z   |   X   |   C   |   V   |   |   N   |   M   |   ,   |   .   |   /   |
+// hold     |       |  ALT  |       |       |       |   |       |       |       |       |  GUI  |
+//
+// tap                      |   M   |  ENT  |  SPC  |   | BSPC  |  SPC  |  DEL  |
+// hold  LAYER              |  ESC  | (GAN) | (MOU) |   | (SYM) | (NUM) | (FUN) |
+
                         bindings = <
    &kp TAB       &kp Q           &kp W          &kp E          &kp R            &trans             &trans         &trans  &trans  &trans                   
    &mt LSHIFT G  &kp A           &kp S          &kp D          &kp F            &trans             &trans         &trans  &trans  &trans
@@ -185,45 +216,69 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 gan_layer {
                         display-name = "Gnum";
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
+// tap      |   1   |   2   |   3   |   4   |   5   |   |   6   |   7   |   8   |   9   |   0   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   G   |   A   |   S   |   D   |   F   |   |   H   |   J   |   K   |   L   |   ;   |
+// hold     | SHFT  |       |       |       |       |   |       | SHFT  | CTRL  |  ALT  |       |
+//          _____________________________________________________________________________________
+// tap      | CTRL  |   Z   |   X   |   C   |   V   |   |   N   |   M   |   ,   |   .   |   /   |
+// hold     |       |  ALT  |       |       |       |   |       |       |       |       |  GUI  |
+//
+// tap                      |   M   |XXXXXXX|  SPC  |   | BSPC  |  SPC  |  DEL  |
+// hold  LAYER              |  ESC  |XXXXXXX| (MOU) |   | (SYM) | (NUM) | (FUN) |
+
                         bindings = <
-   &kp N1     &kp N2        &kp N3         &kp N4        &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-   &kp G      &kp A         &kp S          &kp D         &kp F            &trans  &trans  &trans  &trans  &trans
-   &kp LCTRL  &kp Z         &kp X          &kp C         &kp V            &trans  &trans  &trans  &trans  &trans
-                            &trans         &trans        &trans           &trans  &trans  &trans
+   &kp N1        &kp N2          &kp N3  &kp N4  &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+   &mt LSHIFT G  &kp A           &kp S   &kp D   &kp F            &trans  &trans  &trans  &trans  &trans
+   &kp LCTRL     &mt LEFT_ALT Z  &kp X   &kp C   &kp V            &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans           &trans  &trans  &trans
                         >;
                 };
 
                 med_layer {
                         display-name = "Med";
 // -----------------------------------------------------------------------------------------
-// |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
-// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
-// | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
-//             |     |      |     |   |     |      |      |
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |   R   |   M   |   H   |   S   |   V   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   E   | PREV  | VOLD  | VOLU  | NEXT  |
+// hold     |       |  ALT  | CTRL  | SHFT  |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |   O   |   0   |   1   |   2   |   3   |
+// hold     |  GUI  |       |       |       |       |   |       |       |       |       |  GUI  |
+//
+// tap                      |XXXXXXX|  ENT  |  TAB  |   | PLAY  | STOP  | MUTE  |
+// hold  LAYER              |XXXXXXX| (NAV) | (MOU) |   |       |       |       |
+
                         bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp R             &kp M           &kp H         &kp S            &kp V        
-&trans  &trans  &trans  &trans  &trans    &kp E             &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT   
-&trans  &trans  &trans  &trans  &trans    &kp O             &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3
-                &trans  &trans  &trans    &kp K_PLAY_PAUSE  &kp K_STOP      &kp K_MUTE
+&trans  &trans  &trans  &trans  &trans         &kp R             &kp M           &kp H         &kp S            &kp V        
+&trans  &trans  &trans  &trans  &trans         &kp E             &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT   
+&trans  &trans  &trans  &trans  &trans         &kp O             &kp N0          &kp N1        &kp N2           &kp N3
+                &trans  &trans  &trans         &kp K_PLAY_PAUSE  &kp K_STOP      &kp K_MUTE
                         >;
                 };
 
                 nav_layer {
                         display-name = "Nav";
 // -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
-// |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// tap      |   Q   |   W   |   E   |   R   |   T   |   | UNDO  |  CUT  | COPY  | PASTE | REDO  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   A   |   S   |   D   |   F   |   G   |   | CAPS  | HOME  |  UP   |  END  | PGUP  |
+// hold     |       |  ALT  | CTRL  | SHFT  |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   Z   |   X   |   C   |   V   |   B   |   |  INS  | LEFT  | DOWN  | RGHT  | PGDN  |
+// hold     |  GUI  |       |       |       |       |   |       |       |       |       |       |
+//
+// tap                      |  ESC  |XXXXXXX|  TAB  |   | BSPC  |  SPC  |  DEL  |
+// hold  LAYER              | (GUI) |XXXXXXX| (MOU) |   | (SYM) | (NUM) | (FUN) |
+
                         bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp K_REDO    &kp K_PASTE     &kp K_COPY    &kp K_CUT  &kp K_UNDO    
-&trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp HOME        &kp UP_ARROW  &kp END    &kp PAGE_UP   
-&trans  &trans  &trans  &trans  &trans    &kp INSERT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN
-                &trans  &trans  &trans    &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans    &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(Y)    
+&trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp HOME   &kp UP_ARROW  &kp END      &kp PAGE_UP   
+&trans  &trans  &trans  &trans  &trans    &kp INSERT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp PAGE_DOWN
+                &trans  &trans  &trans    &trans        &trans     &trans
                         >;
                 };
 
@@ -232,24 +287,40 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 mou_layer {
                         display-name = "Mou";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
+// tap      | UNDO  |  CUT  | COPY  | PASTE | REDO  |   | UNDO  |  CUT  | COPY  | PASTE | REDO  |
+// hold     |       |       |       |       | PRTSC |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      | LEFT  | LCLK  |       | RCLK  | PGUP  |   | LEFT  | LCLK  |       | RCLK  | PGUP  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      | RGHT  |       |       |       | PGDN  |   | RGHT  |       |       |       | PGDN  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//
+// tap                      |  ESC  |  ENT  |XXXXXXX|   | LCLK  | MCLK  | RCLK  |
+// hold  LAYER              | [DEF] | [GAM] |XXXXXXX|   |       |       |       |
+
                         bindings = <
-&kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &mt PRINTSCREEN K_UNDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY   &kp K_CUT  &kp K_UNDO  
-&trans      &mkp LCLK    &trans       &mkp MB2   &kp PAGE_UP               &trans      &mkp LCLK    &trans       &mkp MB2   &kp PAGE_UP      
-&trans      &trans       &trans       &trans     &kp PAGE_DOWN             &trans      &trans       &trans       &trans     &kp PAGE_DOWN   
-                         &to DEF      &to GAM    &trans                    &mkp LCLK   &mkp MCLK    &mkp MB2
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mt PRINTSCREEN LC(Y)     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  
+&kp LEFT   &mkp LCLK  &trans     &mkp RCLK  &kp PAGE_UP               &kp LEFT   &mkp LCLK  &trans     &mkp RCLK  &kp PAGE_UP      
+&kp RIGHT  &trans     &trans     &trans     &kp PAGE_DOWN             &kp RIGHT  &trans     &trans     &trans     &kp PAGE_DOWN   
+                      &to DEF    &to GAM    &trans                    &mkp LCLK  &mkp MCLK  &mkp MB2
                         >;
                 };
                 sym_layer {
                         display-name = "Sym";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
+// tap      |   {   |   &   |   *   |   (   |   }   |   | UNDO  |  CUT  | COPY  | PASTE | REDO  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   :   |   $   |   %   |   ^   |   +   |   | LEFT  | LCLK  |       | RCLK  | PGUP  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   ~   |   !   |   @   |   #   |   |   |   | RGHT  |       |       |       | PGDN  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//
+// tap                      |   (   |   )   |   _   |   |XXXXXXX|  SPC  |  DEL  |
+// hold  LAYER              |       |       |       |   |XXXXXXX| (NUM) | (FUN) |
+
                         bindings = <
 &kp LEFT_BRACE  &kp AMPS  &kp STAR              &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans 
 &kp COLON       &kp DLLR  &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &trans 
@@ -261,10 +332,18 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 num_layer {
                         display-name = "Num";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
+// tap      |   [   |   7   |   8   |   9   |   ]   |   |   Y   |   U   |   I   |   O   |   P   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   ;   |   4   |   5   |   6   |   =   |   |   H   |   +   |   -   |   *   |   /   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |   `   |   1   |   2   |   3   |   \   |   |   N   |   (   |   )   |   .   |   /   |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//
+// tap                      |   .   |   0   |   -   |   | BSPC  |XXXXXXX|  DEL  |
+// hold  LAYER              |       |       |       |   | (SYM) |XXXXXXX| (FUN) |
+
                         bindings = <
 &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &trans  &trans                &kp GT                 &trans    &trans        
 &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &trans  &kp PLUS              &kp MINUS              &kp STAR  &kp SLASH 
@@ -276,15 +355,23 @@ ZMK_COMBO(rrst, &bootloader, RT4 RB0, DEF, COMBO_TERM_SLOW)
                 fun_layer {
                         display-name = "Fun";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
+// tap      |  F12  |  F7   |  F8   |  F9   | PSCR  |   |  BT0  |  BT1  |  BT2  |  BT3  |  BT4  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |  F11  |  F4   |  F5   |  F6   | SCRLK |   | DCN0  | DCN1  | DCN2  | DCN3  | DCN4  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//          _____________________________________________________________________________________
+// tap      |  F10  |  F1   |  F2   |  F3   | PAUSE |   |  BLE  |  USB  |   ,   | BTCLA | BTCLR |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
+//
+// tap                      | [DEF] | [GAM] |  TAB  |   | BSPC  |  SPC  |XXXXXXX|
+// hold  LAYER              |       |       | (MOU) |   | (SYM) | (NUM) |XXXXXXX|
+
                         bindings = <
 &kp F12  &kp F7  &kp F8    &kp F9    &kp PRINTSCREEN    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4   
 &kp F11  &kp F4  &kp F5    &kp F6    &kp SCROLLLOCK     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4  
 &kp F10  &kp F1  &kp F2    &kp F3    &kp PAUSE_BREAK    &out OUT_BLE   &out OUT_USB   &trans         &bt BT_CLR_ALL  &bt BT_CLR     
-                 &to DEF   &to GAM   &tog DEF           &trans         &trans         &trans
+                 &to DEF   &to GAM   &trans             &trans         &trans         &trans
                         >;
                 };
 
