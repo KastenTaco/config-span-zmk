@@ -66,7 +66,7 @@ layers:
     - {t: DELETE, h: Fun}
   Gnum:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-  - - G
+  - - {t: G, h: LSHIFT}
     - A
     - S
     - D
@@ -77,7 +77,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - LCTRL
-    - Z
+    - {t: Z, h: LEFT ALT}
     - X
     - C
     - V
@@ -135,11 +135,11 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - REDO
-    - PASTE
-    - COPY
-    - CUT
-    - UNDO
+    - Ctl+ Z
+    - Ctl+ X
+    - Ctl+ C
+    - Ctl+ V
+    - Ctl+ Y
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -156,7 +156,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - INSERT
-    - LEFT ARROW
+    - LEFT
     - DOWN
     - RIGHT
     - PAGE DOWN
@@ -167,32 +167,32 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Mou:
-  - - REDO
-    - PASTE
-    - COPY
-    - CUT
-    - {t: UNDO, h: PRINTSCREEN}
-    - REDO
-    - PASTE
-    - COPY
-    - CUT
-    - UNDO
-  - - {t: ▽, type: trans}
+  - - Ctl+ Z
+    - Ctl+ X
+    - Ctl+ C
+    - Ctl+ V
+    - {t: Ctl+ Y, h: PRINTSCREEN}
+    - Ctl+ Z
+    - Ctl+ X
+    - Ctl+ C
+    - Ctl+ V
+    - Ctl+ Y
+  - - LEFT
     - '&mkp LCLK'
     - {t: ▽, type: trans}
-    - '&mkp MB2'
+    - '&mkp RCLK'
     - PAGE UP
-    - {t: ▽, type: trans}
+    - LEFT
     - '&mkp LCLK'
     - {t: ▽, type: trans}
-    - '&mkp MB2'
+    - '&mkp RCLK'
     - PAGE UP
-  - - {t: ▽, type: trans}
+  - - RIGHT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - PAGE DOWN
-    - {t: ▽, type: trans}
+    - RIGHT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -310,12 +310,12 @@ layers:
     - BT CLR
   - - {t: Base, h: toggle}
     - {t: Game, h: toggle}
-    - {t: Base, h: toggle}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
 combos:
-- p: [25, 26]
+- p: [15, 16]
   k: F5
   l: [Base]
 - p: [24, 23]
@@ -330,33 +330,15 @@ combos:
 - p: [10, 11]
   k: Ctl+ A
   l: [Base]
-- p: [3, 2]
-  k: Ctl+ Y
-  l: [Base]
 - p: [2, 1]
   k: Ctl+ Z
   l: [Base]
-- p: [15, 16]
-  k: (
-  l: [Base]
-- p: [16, 17]
-  k: )
-  l: [Base]
-- p: [26, 27]
-  k: '-'
-  l: [Base]
-- p: [8, 9]
-  k: BACKSPACE
+- p: [3, 2]
+  k: Ctl+ Y
   l: [Base]
 - p: [18, 19]
   k: ''''
   l: [Base]
 - p: [13, 16]
   k: '&caps_word'
-  l: [Base]
-- p: [0, 24]
-  k: '&bootloader'
-  l: [Base]
-- p: [9, 25]
-  k: '&bootloader'
   l: [Base]
