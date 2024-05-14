@@ -54,14 +54,14 @@
 
 // REFRESH (F5)
 // -----------------------------------------------------------------------------------------
-// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
+// tap      |   Q   |   W   |   E   |   R   |   T   |   |XXXYXXX|XXXUXXX|   I   |   O   |   P   |
 //          _____________________________________________________________________________________
-// tap      |   A   |   S   |   D   |   F   |   G   |   |XXXHXXX|XXXJXXX|   K   |   L   |   ;   |
+// tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
 //          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
 //
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-ZMK_COMBO(refr, &kp F5, RM0 RM1, DEF, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp F5, RT0 RT1, DEF, COMBO_TERM_FAST)        
 
 // PASTE
 // -----------------------------------------------------------------------------------------
@@ -262,23 +262,23 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
                 nav_layer {
                         display-name = "Nav";
 // -----------------------------------------------------------------------------------------
-// tap      |   Q   |   W   |   E   |   R   |   T   |   | UNDO  |  CUT  | COPY  | PASTE | REDO  |
+// tap      |   *   |   7   |   8   |   9   |   +   |   | UNDO  |  CUT  | COPY  | PASTE | REDO  |
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
-// tap      |   A   |   S   |   D   |   F   |   G   |   | CAPS  | HOME  |  UP   |  END  | PGUP  |
-// hold     |       |  ALT  | CTRL  | SHFT  |       |   |       |       |       |       |       |
+// tap      |   /   |   4   |   5   |   6   |   -   |   | CAPS  | HOME  |  UP   |  END  | PGUP  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
-// tap      |   Z   |   X   |   C   |   V   |   B   |   |  INS  | LEFT  | DOWN  | RGHT  | PGDN  |
-// hold     |  GUI  |       |       |       |       |   |       |       |       |       |       |
+// tap      |   .   |   1   |   2   |   3   |   0   |   |  INS  | LEFT  | DOWN  | RGHT  | PGDN  |
+// hold     |       |       |       |       |       |   |       |       |       |       |       |
 //
 // tap                      |  ESC  |XXXXXXX|  TAB  |   | BSPC  |  SPC  |  DEL  |
 // hold  LAYER              | (GUI) |XXXXXXX| (MOU) |   | (SYM) | (NUM) | (FUN) |
 
                         bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(Y)    
-&trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp HOME   &kp UP_ARROW  &kp END      &kp PAGE_UP   
-&trans  &trans  &trans  &trans  &trans    &kp INSERT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp PAGE_DOWN
-                &trans  &trans  &trans    &trans        &trans     &trans
+&kp STAR    &kp N7  &kp N8  &kp N9  &kp PLUS     &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(Y)    
+&kp SLASH   &kp N4  &kp N5  &kp N6  &kp MINUS    &kp CAPSLOCK  &kp HOME   &kp UP_ARROW  &kp END      &kp PAGE_UP   
+&kp PERIOD  &kp N1  &kp N2  &kp N3  &kp N0       &kp INSERT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp PAGE_DOWN
+                    &trans  &trans  &trans       &trans        &trans     &trans
                         >;
                 };
 
@@ -347,7 +347,7 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
                         bindings = <
 &kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR      
 &kp SEMICOLON     &kp N4  &kp N5      &kp N6  &kp EQUAL            &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH 
-&kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &kp N0     &kp N1  &kp N2  &kp N3  &trans         
+&kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD      
                           &kp PERIOD  &kp N0  &kp MINUS            &trans     &trans  &trans
                         >;
                 };
