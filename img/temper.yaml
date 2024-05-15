@@ -58,7 +58,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: M, h: ESCAPE}
+  - - {t: ESCAPE, h: M}
     - {t: ENTER, h: Gnum}
     - {t: SPACE, h: Mou}
     - {t: BACKSPACE, h: Sym}
