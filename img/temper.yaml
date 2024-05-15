@@ -131,11 +131,29 @@ layers:
     - MUTE
   Nav:
   - ['*', '7', '8', '9', +, Ctl+ Z, Ctl+ X, Ctl+ C, Ctl+ V, Ctl+ Y]
-  - [/, '4', '5', '6', '-', CAPSLOCK, HOME, UP ARROW, END, PAGE UP]
-  - [., '1', '2', '3', '0', INSERT, LEFT, DOWN, RIGHT, PAGE DOWN]
-  - - {t: ▽, type: trans}
+  - - /
+    - {t: '4', h: LEFT ALT}
+    - {t: '5', h: LCTRL}
+    - {t: '6', h: LEFT SHIFT}
+    - '-'
+    - CAPSLOCK
+    - HOME
+    - UP ARROW
+    - END
+    - PAGE UP
+  - - {t: ., h: LEFT GUI}
+    - '1'
+    - '2'
+    - '3'
+    - '0'
+    - INSERT
+    - LEFT
+    - DOWN
+    - RIGHT
+    - PAGE DOWN
+  - - BACKSPACE
     - {type: held}
-    - {t: ▽, type: trans}
+    - DEL
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
