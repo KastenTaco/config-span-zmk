@@ -266,24 +266,22 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 // hold     |       |       |       |       |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
 // tap      |   /   |   4   |   5   |   6   |   -   |   | CAPS  | HOME  |  UP   |  END  | PGUP  |
-// hold     |       |       |       |       |       |   |       |       |       |       |       |
+// hold     |       |  ALT  | CTRL  | SHFT  |       |   |       |       |       |       |       |
 //          _____________________________________________________________________________________
 // tap      |   .   |   1   |   2   |   3   |   0   |   |  INS  | LEFT  | DOWN  | RGHT  | PGDN  |
-// hold     |       |       |       |       |       |   |       |       |       |       |       |
+// hold     |  GUI  |       |       |       |       |   |       |       |       |       |       |
 //
-// tap                      |  ESC  |XXXXXXX|  TAB  |   | BSPC  |  SPC  |  DEL  |
-// hold  LAYER              | (GUI) |XXXXXXX| (MOU) |   | (SYM) | (NUM) | (FUN) |
+// tap                      | BSPC  |XXXXXXX|  DEL  |   | BSPC  |  SPC  |  DEL  |
+// hold  LAYER              |       |XXXXXXX|       |   | (SYM) | (NUM) | (FUN) |
 
-                        bindings = <
-&kp STAR    &kp N7  &kp N8  &kp N9  &kp PLUS     &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(Y)    
-&kp SLASH   &kp N4  &kp N5  &kp N6  &kp MINUS    &kp CAPSLOCK  &kp HOME   &kp UP_ARROW  &kp END      &kp PAGE_UP   
-&kp PERIOD  &kp N1  &kp N2  &kp N3  &kp N0       &kp INSERT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp PAGE_DOWN
-                    &trans  &trans  &trans       &trans        &trans     &trans
+                        bindings = < 
+&kp STAR    &kp N7           &kp N8         &kp N9             &kp PLUS        &kp LC(Z)     &kp LC(X)  &kp LC(C)     &kp LC(V)    &kp LC(Y)    
+&kp SLASH   &mt LEFT_ALT N4  &mt LCTRL N5   &mt LEFT_SHIFT N6  &kp MINUS       &kp CAPSLOCK  &kp HOME   &kp UP_ARROW  &kp END      &kp PAGE_UP   
+&mt LEFT_GUI PERIOD  &kp N1  &kp N2         &kp N3             &kp N0          &kp INSERT    &kp LEFT   &kp DOWN      &kp RIGHT    &kp PAGE_DOWN
+                             &kp BACKSPACE  &trans             &kp DEL         &trans        &trans     &trans
                         >;
                 };
 
-// This layer is unreachable until "tri layer state" is sorted out.
-// Leaving it here for completeness.
                 mou_layer {
                         display-name = "Mou";
 // -----------------------------------------------------------------------------------------
