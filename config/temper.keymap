@@ -154,8 +154,8 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 
 &mt{
         flavor = "balanced";
-        tapping-term-ms = <350>;
-        quick-tap-ms = <250>;
+        tapping-term-ms = <250>;
+        quick-tap-ms = <200>;
         require-prior-idle-ms = <150>;
 };
 
