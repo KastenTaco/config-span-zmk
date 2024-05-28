@@ -9,7 +9,9 @@ mechanical keyboard.
  * QWERTY base layout
  * Modified Miryoku layout
  * moved GUI key to lower row due to many false activations
- * Added a row of combos and hold/tap delays to make better use of the 36 key layout    
+ * Added a row of combos and hold/tap delays to make better use of the 36 key layout
+
+![keyboard image](photos/temper.svg)
 
 ![keymap image](img/temper.svg)
 
