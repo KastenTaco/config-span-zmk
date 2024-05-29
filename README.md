@@ -1,4 +1,4 @@
-Temper Settings
+Temper Keyboard
 =============== 
 
 This project is still being developed as I am polishing the keymap for something I really like. Comments and code might be unstructured or incorrect as changes are implemented.
