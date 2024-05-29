@@ -11,7 +11,13 @@ mechanical keyboard.
  * moved GUI key to lower row due to many false activations
  * Added a row of combos and hold/tap delays to make better use of the 36 key layout
 
+The case is based off the chocofi case, but has some adaptations to better take the power switch position of the temper. The files are within this repository. 
+
+## Keyboard
+
 ![keyboard image](pictures/chocolate_temper.png)
+
+## Keymap
 
 ![keymap image](img/temper.svg)
 
