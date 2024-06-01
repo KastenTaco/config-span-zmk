@@ -279,7 +279,10 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
 combos:
-- p: [5, 6]
+- p: [13, 16]
+  k: '&caps_word'
+  l: [Base]
+- p: [0, 1]
   k: F5
   l: [Base]
 - p: [24, 23]
