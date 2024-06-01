@@ -3,7 +3,6 @@ id: span
 name: Span
 type: shield
 url: https://github.com/KastenTaco/config-span-zmk/
-requires: [nice!view]
 exposes: [i2c_oled]
 features:
   - keys
