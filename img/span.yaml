@@ -306,6 +306,3 @@ combos:
 - p: [18, 19]
   k: ''''
   l: [Base]
-- p: [13, 16]
-  k: '&caps_word'
-  l: [Base]
