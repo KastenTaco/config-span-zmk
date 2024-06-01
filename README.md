@@ -1,9 +1,9 @@
-Temper Keyboard
+Span Keyboard
 =============== 
 
 This project is still being developed as I am polishing the keymap for something I really like. Comments and code might be unstructured or incorrect as changes are implemented.
 
-Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
+Controlling my [Span](https://holykeebs.com/products/span), a split wireless-only
 mechanical keyboard.
 
  * QWERTY base layout
@@ -11,15 +11,15 @@ mechanical keyboard.
  * moved GUI key to lower row due to many false activations
  * Added a row of combos and hold/tap delays to make better use of the 36 key layout
 
-The case is based off the chocofi case, but has some adaptations to better take the power switch position of the temper. The files are within this repository. 
+I will be working out a case for this keyboard shortly. My idea is to keep it as low profile as possible. Likely only a backplate that embeds with the hot sockest. We'll see...
 
 ## Keyboard
 
-![keyboard image](pictures/chocolate_temper.png)
+![keyboard image](img/spankeeb.jpg)
 
 ## Keymap
 
-![keymap image](img/temper.svg)
+![keymap image](img/span.svg)
 
 
 ## Building
