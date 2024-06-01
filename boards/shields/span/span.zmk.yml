@@ -1,0 +1,13 @@
+file_format: "1"
+id: span
+name: Span
+type: shield
+url: https://github.com/KastenTaco/config-span-zmk/
+requires: [nice!view]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - span_left
+  - span_right
