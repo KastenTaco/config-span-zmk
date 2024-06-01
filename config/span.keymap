@@ -47,6 +47,7 @@
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
 //
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
+ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -54,14 +55,14 @@
 
 // REFRESH (F5)
 // -----------------------------------------------------------------------------------------
-// tap      |   Q   |   W   |   E   |   R   |   T   |   |XXXYXXX|XXXUXXX|   I   |   O   |   P   |
+// tap      |XXXQXXX|XXXWXXX|   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
 //          _____________________________________________________________________________________
 // tap      |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
 //          _____________________________________________________________________________________
 // tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
 //
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-ZMK_COMBO(refr, &kp F5, RT0 RT1, DEF, COMBO_TERM_FAST)        
+ZMK_COMBO(refr, &kp F5, LT4 LT3, DEF, COMBO_TERM_FAST)    
 
 // PASTE
 // -----------------------------------------------------------------------------------------
@@ -155,7 +156,7 @@ ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
 &mt{
         flavor = "balanced";
         tapping-term-ms = <250>;
-        quick-tap-ms = <200>;
+        quick-tap-ms = <175>;
         require-prior-idle-ms = <150>;
 };
 
