@@ -141,17 +141,6 @@ ZMK_COMBO(redo, &kp LC(Y), LT1 LT2, DEF, COMBO_TERM_SLOW)
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(apos, &kp APOS, RM3 RM4, DEF, COMBO_TERM_SLOW)
 
-// CAPS WORD
-// -----------------------------------------------------------------------------------------
-// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          _____________________________________________________________________________________
-// tap      |   A   |   S   |   D   |XXXFXXX|   G   |   |   H   |XXXJXXX|   K   |   L   |   ;   |
-//          _____________________________________________________________________________________
-// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
-//
-// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-ZMK_COMBO(caps, &caps_word, LM1 RM1, DEF, COMBO_TERM_SLOW)
-
 
 &mt{
         flavor = "balanced";
