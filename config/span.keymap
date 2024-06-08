@@ -97,17 +97,6 @@ ZMK_COMBO(copy, &kp LC(C), LB1 LB2, DEF, COMBO_TERM_SLOW)
 // tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
 ZMK_COMBO(cut, &kp LC(X), LB2 LB3, DEF, COMBO_TERM_SLOW)
 
-// SELECT ALL
-// -----------------------------------------------------------------------------------------
-// tap      |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
-//          _____________________________________________________________________________________
-// tap      |XXXAXXX|XXXSXXX|   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |
-//          _____________________________________________________________________________________
-// tap      |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   |
-//
-// tap                      |  ESC  |  ENT  |  TAB  |   | BSPC  |  SPC  |  DEL  |
-ZMK_COMBO(sall, &kp LC(A), LM4 LM3, DEF, COMBO_TERM_FAST)
-
 // UNDO
 // -----------------------------------------------------------------------------------------
 // tap      |   Q   |XXXWXXX|XXXEXXX|   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |
