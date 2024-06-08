@@ -294,9 +294,6 @@ combos:
 - p: [22, 21]
   k: Ctl+ X
   l: [Base]
-- p: [10, 11]
-  k: Ctl+ A
-  l: [Base]
 - p: [2, 1]
   k: Ctl+ Z
   l: [Base]
