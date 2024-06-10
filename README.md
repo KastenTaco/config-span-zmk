@@ -17,6 +17,12 @@ I will be working out a case for this keyboard shortly. My idea is to keep it as
 
 ![keyboard image](img/spankeeb.jpg)
 
+## Case
+The files for the case can be found within the repository. The pcb sits flush to the upper edge of the case. I've added some standoffs to screw the PCB on with M2x4 screws. Ideally you'd use 5 per side, 4 will do just fine as well. 
+Just note that cutouts are for cosmetic purposes only.
+
+![keyboard image](img/spankeebback.jpg)
+
 ## Keymap
 
 ![keymap image](img/span.svg)
