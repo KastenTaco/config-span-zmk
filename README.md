@@ -11,7 +11,6 @@ mechanical keyboard.
  * moved GUI key to lower row due to many false activations
  * Added a row of combos and hold/tap delays to make better use of the 36 key layout
 
-I will be working out a case for this keyboard shortly. My idea is to keep it as low profile as possible. Likely only a backplate that embeds with the hot swap sockest. We'll see...
 
 ## Keyboard
 
